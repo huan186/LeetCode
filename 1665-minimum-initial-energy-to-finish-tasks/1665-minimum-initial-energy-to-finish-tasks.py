@@ -1,14 +1,11 @@
 class Solution:
     def minimumEffort(self, tasks: List[List[int]]) -> int:
-        res = energy = sum(t[0] for t in tasks)
-        heap = []
-        for task in tasks:
-            heapq.heappush(heap, (task[0] - task[1], task[0], task[1]))
-        while heap:
-            _, actual, minimum = heapq.heappop(heap)
+        tasks.sort(key=lambda x: x[1] - x[0], reverse=True)
+        energy = 0
+        res = 0
+        for actual, minimum in tasks:
             if energy < minimum:
                 res += minimum - energy
-                energy = minimum - actual
-            else:
-                energy -= actual
+                energy = minimum
+            energy -= actual
         return res
