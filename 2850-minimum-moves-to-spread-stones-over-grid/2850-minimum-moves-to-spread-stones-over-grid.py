@@ -1,7 +1,4 @@
 class Solution:
-    # def __init__(self):
-    #     self.ans = None
-
     def minimumMoves(self, grid: List[List[int]]) -> int:
         zeros = []
         extras = []
