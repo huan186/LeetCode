@@ -4,18 +4,20 @@ class Solution:
         nums.sort()
         res = []
         seen = [True] + [False] * k
-        i = 0
+        i, j = 0, 0
+
+        def is_possible():
+            for s in range(k, -1, -1):
+                if seen[s] and (k - s) % x == 0 and (k - s) // x <= n - j:
+                    return True
+            return False
+
         for x in range(1, n + 1):
             j = i
             while j < n and nums[j] <= x:
                 for num in range(k, nums[j] - 1, -1):
                     seen[num] |= seen[num - nums[j]]
                 j += 1
-            for s in range(k, -1, -1):
-                if seen[s] and (k - s) % x == 0 and (k - s) // x <= n - j:
-                    res.append(True)
-                    break
-            else:
-                res.append(False)
+            res.append(is_possible())
             i = j
         return res
