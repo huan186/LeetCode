@@ -10,4 +10,5 @@ class Solution:
             if s == target:
                 cnt += 1
                 s = 0
-        return cnt >= 3
+                if cnt == 3: return True
+        return False
