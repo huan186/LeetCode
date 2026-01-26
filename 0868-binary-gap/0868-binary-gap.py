@@ -5,8 +5,8 @@ class Solution:
         while n & 1 == 0:
             n >>= 1
         res, cnt = 0, 0
-        while n > 0:
-            if n & 1 == 1:
+        while n:
+            if n & 1:
                 res = max(res, cnt)
                 cnt = 1
             else:
