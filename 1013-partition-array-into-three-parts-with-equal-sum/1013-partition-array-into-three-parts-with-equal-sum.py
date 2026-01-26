@@ -3,8 +3,7 @@ class Solution:
         total = sum(arr)
         if total % 3 != 0:
             return False
-        n, i, target = len(arr), 0, total // 3
-        s, cnt = 0, 0
+        s, cnt, target = 0, 0, total // 3
         for num in arr:
             s += num
             if s == target:
