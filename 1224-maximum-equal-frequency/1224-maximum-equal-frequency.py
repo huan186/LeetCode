@@ -1,26 +1,39 @@
 class Solution:
     def maxEqualFreq(self, nums: List[int]) -> int:
-        freq = Counter()
-        cnt = Counter()
-        res = 0
+        from collections import Counter
 
-        for i, x in enumerate(nums):
-            f = freq[x]
-            if f:
-                cnt[f] -= 1
-                if cnt[f] == 0:
-                    del cnt[f]
+        freq = Counter(nums)
+        cnt = Counter(freq.values())
 
-            freq[x] += 1
-            cnt[freq[x]] += 1
+        def valid():
+            if len(cnt) == 1:
+                f = next(iter(cnt))
+                return f == 1 or cnt[f] == 1
 
-            if (
-                len(cnt) == 1 and (1 in cnt or cnt[next(iter(cnt))] == 1)
-                or len(cnt) == 2 and (
-                    1 in cnt and cnt[1] == 1
-                    or max(cnt) == min(cnt) + 1 and cnt[max(cnt)] == 1
+            if len(cnt) == 2:
+                f1, f2 = min(cnt), max(cnt)
+                return (
+                    f1 == 1 and cnt[f1] == 1 or
+                    f2 == f1 + 1 and cnt[f2] == 1
                 )
-            ):
-                res = i + 1
 
-        return res
+            return False
+
+        for i in range(len(nums) - 1, -1, -1):
+            if valid():
+                return i + 1
+
+            x = nums[i]
+            f = freq[x]
+
+            cnt[f] -= 1
+            if cnt[f] == 0:
+                del cnt[f]
+
+            if f == 1:
+                del freq[x]
+            else:
+                freq[x] -= 1
+                cnt[f - 1] += 1
+
+        return 1
