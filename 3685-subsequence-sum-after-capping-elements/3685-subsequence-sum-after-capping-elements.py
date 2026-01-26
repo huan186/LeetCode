@@ -7,7 +7,7 @@ class Solution:
         i, j = 0, 0
 
         def is_possible():
-            for s in range(k, -1, -1):
+            for s in range(k + 1):
                 if seen[s] and (k - s) % x == 0 and (k - s) // x <= n - j:
                     return True
             return False
