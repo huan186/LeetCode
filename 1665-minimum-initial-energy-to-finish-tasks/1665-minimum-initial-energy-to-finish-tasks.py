@@ -6,10 +6,9 @@ class Solution:
             heapq.heappush(heap, (task[0] - task[1], task[0], task[1]))
         while heap:
             _, actual, minimum = heapq.heappop(heap)
-            required = max(actual, minimum)
-            if energy < required:
-                res += required - energy
-                energy = required - actual
+            if energy < minimum:
+                res += minimum - energy
+                energy = minimum - actual
             else:
                 energy -= actual
         return res
