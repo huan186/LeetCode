@@ -11,8 +11,8 @@ class Solution:
                 for num in range(k, nums[j] - 1, -1):
                     seen[num] |= seen[num - nums[j]]
                 j += 1
-            for num in range(k + 1):
-                if seen[num] and (k - num) % x == 0 and (k - num) // x <= n - j:
+            for s in range(k + 1):
+                if seen[s] and (k - s) % x == 0 and (k - s) // x <= n - j:
                     res.append(True)
                     break
             else:
