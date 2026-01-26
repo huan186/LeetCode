@@ -13,7 +13,7 @@ class Solution:
                 if seen[s] and (k - s) % x == 0 and (k - s) // x <= n - cnt:
                     return True
             return False
-        i = 0
+
         for x in range(1, n + 1):
             while x < len(freq) and freq[x]:
                 for num in range(k, x - 1, -1):
