@@ -11,4 +11,3 @@ class Solution:
                 cnt += 1
                 s = 0
         return cnt >= 3
-        
