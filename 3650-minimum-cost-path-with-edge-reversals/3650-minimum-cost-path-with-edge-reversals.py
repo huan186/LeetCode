@@ -9,6 +9,8 @@ class Solution:
         heap = [(0, 0)]
         while heap:
             total_cost, node = heapq.heappop(heap)
+            if node == n - 1:
+                return total_cost
             if min_cost[node] <= total_cost:
                 continue
             min_cost[node] = total_cost
