@@ -4,7 +4,8 @@ class Solution:
         for u, v, cost in edges:
             graph[u].append((v, cost))
             graph[v].append((u, 2 * cost))
-        min_cost = [10**9] * n
+        inf = 10 ** 9
+        min_cost = [inf] * n
         heap = [(0, 0)]
         while heap:
             total_cost, node = heapq.heappop(heap)
@@ -14,4 +15,4 @@ class Solution:
             for next_node, cost in graph[node]:
                 if total_cost + cost < min_cost[next_node]:
                     heapq.heappush(heap, (total_cost + cost, next_node))
-        return min_cost[-1] if min_cost[-1] != 10**9 else -1
+        return -1 if min_cost[-1] == inf else min_cost[-1]
