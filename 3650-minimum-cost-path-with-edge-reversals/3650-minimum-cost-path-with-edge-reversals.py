@@ -17,4 +17,4 @@ class Solution:
             for next_node, cost in graph[node]:
                 if total_cost + cost < min_cost[next_node]:
                     heapq.heappush(heap, (total_cost + cost, next_node))
-        return -1 if min_cost[-1] == inf else min_cost[-1]
+        return -1
