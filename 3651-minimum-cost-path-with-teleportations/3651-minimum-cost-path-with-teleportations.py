@@ -4,55 +4,60 @@ from typing import List
 class Solution:
     def minCost(self, grid: List[List[int]], k: int) -> int:
         m, n = len(grid), len(grid[0])
-        INF = 10**18
+        N = m * n
 
-        # dist[i][j][t]
-        dist = [[[INF] * (k + 1) for _ in range(n)] for _ in range(m)]
-        dist[0][0][0] = 0
+        # flatten index
+        def idx(i, j):
+            return i * n + j
 
-        # flatten cells sorted by value
+        # sort cells by value
         cells = []
         for i in range(m):
             for j in range(n):
-                cells.append((grid[i][j], i, j))
-        cells.sort()
+                cells.append((grid[i][j], idx(i, j)))
+        cells.sort()  # increasing by value
 
-        # pointer for teleport expansion per used
+        INF = 10**18
+        dist = [[INF] * (k + 1) for _ in range(N)]
+
+        # ptr[t]: how many cells already unlocked for teleport layer t
         ptr = [0] * (k + 1)
 
-        pq = [(0, 0, 0, 0)]  # cost, i, j, used
+        pq = [(0, 0, 0)]  # (cost, used_teleport, index)
+        dist[0][0] = 0
 
         while pq:
-            cost, i, j, used = heapq.heappop(pq)
-            if cost > dist[i][j][used]:
+            cost, used, u = heapq.heappop(pq)
+            if cost > dist[u][used]:
                 continue
 
-            if i == m - 1 and j == n - 1:
+            if u == N - 1:
                 return cost
 
-            # normal moves
-            if j + 1 < n:
-                nc = cost + grid[i][j + 1]
-                if nc < dist[i][j + 1][used]:
-                    dist[i][j + 1][used] = nc
-                    heapq.heappush(pq, (nc, i, j + 1, used))
+            i, j = divmod(u, n)
 
-            if i + 1 < m:
-                nc = cost + grid[i + 1][j]
-                if nc < dist[i + 1][j][used]:
-                    dist[i + 1][j][used] = nc
-                    heapq.heappush(pq, (nc, i + 1, j, used))
+            # normal moves
+            for ni, nj in ((i + 1, j), (i, j + 1)):
+                if ni < m and nj < n:
+                    v = idx(ni, nj)
+                    nc = cost + grid[ni][nj]
+                    if nc < dist[v][used]:
+                        dist[v][used] = nc
+                        heapq.heappush(pq, (nc, used, v))
 
             # teleport
             if used < k:
-                v = grid[i][j]
-                p = ptr[used]
-                while p < len(cells) and cells[p][0] <= v:
-                    _, x, y = cells[p]
-                    if cost < dist[x][y][used + 1]:
-                        dist[x][y][used + 1] = cost
-                        heapq.heappush(pq, (cost, x, y, used + 1))
+                val = grid[i][j]
+                p = ptr[used + 1]
+
+                # unlock all cells with value <= val
+                while p < N and cells[p][0] <= val:
+                    v = cells[p][1]
+                    if cost < dist[v][used + 1]:
+                        dist[v][used + 1] = cost
+                        heapq.heappush(pq, (cost, used + 1, v))
                     p += 1
-                ptr[used] = p
+
+                ptr[used + 1] = p
 
         return -1
