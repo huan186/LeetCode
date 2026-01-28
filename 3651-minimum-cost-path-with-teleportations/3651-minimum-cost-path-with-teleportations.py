@@ -6,21 +6,18 @@ class Solution:
         m, n = len(grid), len(grid[0])
         N = m * n
 
-        # flatten index
         def idx(i, j):
             return i * n + j
 
-        # sort cells by value
         cells = []
         for i in range(m):
             for j in range(n):
                 cells.append((grid[i][j], idx(i, j)))
-        cells.sort()  # increasing by value
+        cells.sort()
 
         INF = 10**18
         dist = [[INF] * (k + 1) for _ in range(N)]
 
-        # ptr[t]: how many cells already unlocked for teleport layer t
         ptr = [0] * (k + 1)
 
         pq = [(0, 0, 0)]  # (cost, used_teleport, index)
@@ -50,7 +47,6 @@ class Solution:
                 val = grid[i][j]
                 p = ptr[used + 1]
 
-                # unlock all cells with value <= val
                 while p < N and cells[p][0] <= val:
                     v = cells[p][1]
                     if cost < dist[v][used + 1]:
