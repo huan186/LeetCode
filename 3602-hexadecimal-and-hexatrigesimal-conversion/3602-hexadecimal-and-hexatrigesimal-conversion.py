@@ -10,4 +10,4 @@ class Solution:
                 vx = ch + vx
                 v10 //= x
             return vx
-        return base_10_to_base_x(16, n * n) + base_10_to_base_x(36, n * n * n)
+        return base_10_to_base_x(16, n ** 2) + base_10_to_base_x(36, n ** 3)
