@@ -5,7 +5,6 @@ class Solution:
             graph[ord(o)-97].append((ord(c)-97, w))
         INF = 10**18
         dist = [[INF]*26 for _ in range(26)]
-
         for s in range(26):
             heap = [(0, s)]
             while heap:
@@ -15,7 +14,6 @@ class Solution:
                 dist[s][u] = cur_cost
                 for v, w in graph[u]:
                     heapq.heappush(heap, (cur_cost + w, v))
-
         ans = 0
         for a, b in zip(source, target):
             u, v = ord(a)-97, ord(b)-97
