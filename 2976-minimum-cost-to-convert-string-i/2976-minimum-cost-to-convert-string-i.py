@@ -3,10 +3,7 @@ class Solution:
         graph = [{} for _ in range(26)]
         for o, c, w in zip(original, changed, cost):
             i1, i2 = ord(o) - 97, ord(c) - 97
-            if i2 in graph[i1]:
-                graph[i1][i2] = min(graph[i1][i2], w)
-            else:
-                graph[i1][i2] = w
+            graph[i1][i2] = min(graph[i1].get(i2, w), w)
         inf = 10 ** 18
         dist = [[inf] * 26 for _ in range(26)]
         for s in range(26):
