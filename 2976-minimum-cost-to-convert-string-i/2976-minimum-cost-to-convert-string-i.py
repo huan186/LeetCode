@@ -13,7 +13,8 @@ class Solution:
                     continue
                 dist[s][u] = cur_cost
                 for v, w in graph[u]:
-                    heapq.heappush(heap, (cur_cost + w, v))
+                    if cur_cost + w < dist[s][v]:
+                        heapq.heappush(heap, (cur_cost + w, v))
         ans = 0
         for a, b in zip(source, target):
             u, v = ord(a)-97, ord(b)-97
