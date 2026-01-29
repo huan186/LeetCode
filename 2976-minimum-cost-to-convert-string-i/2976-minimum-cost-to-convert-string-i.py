@@ -20,8 +20,6 @@ class Solution:
                         heapq.heappush(heap, (next_cost, j))
         min_cost = 0
         for i in range(len(source)):
-            if source[i] == target[i]:
-                continue
             i1, i2 = ord(source[i]) - 97, ord(target[i]) - 97
             if dist[i1][i2] == inf:
                 return -1
