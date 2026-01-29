@@ -1,25 +1,25 @@
 class Solution:
-    def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
+    def minimumCost(self, source, target, original, changed, cost):
         graph = [[] for _ in range(26)]
-        for i in range(len(original)):
-            graph[ord(original[i]) - 97].append((ord(changed[i]) - 97, cost[i]))
-        inf = 10 ** 9
-        dist = [[inf] * 26 for _ in range(26)]
-        for idx in range(26):
-            heap = [(0, idx)]
+        for o, c, w in zip(original, changed, cost):
+            graph[ord(o)-97].append((ord(c)-97, w))
+        INF = 10**18
+        dist = [[INF]*26 for _ in range(26)]
+
+        for s in range(26):
+            heap = [(0, s)]
             while heap:
-                cost, i = heapq.heappop(heap)
-                if dist[idx][i] <= cost:
+                cur_cost, u = heapq.heappop(heap)
+                if dist[s][u] <= cur_cost:
                     continue
-                dist[idx][i] = cost
-                for j, c in graph[i]:
-                    next_cost = cost + c
-                    if dist[idx][j] > next_cost:
-                        heapq.heappush(heap, (next_cost, j))
-        min_cost = 0
-        for i in range(len(source)):
-            i1, i2 = ord(source[i]) - 97, ord(target[i]) - 97
-            if dist[i1][i2] == inf:
+                dist[s][u] = cur_cost
+                for v, w in graph[u]:
+                    heapq.heappush(heap, (cur_cost + w, v))
+
+        ans = 0
+        for a, b in zip(source, target):
+            u, v = ord(a)-97, ord(b)-97
+            if dist[u][v] == INF:
                 return -1
-            min_cost += dist[i1][i2]
-        return min_cost
+            ans += dist[u][v]
+        return ans
