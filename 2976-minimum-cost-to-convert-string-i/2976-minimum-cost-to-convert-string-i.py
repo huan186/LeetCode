@@ -1,7 +1,5 @@
 class Solution:
     def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
-        if source == target:
-            return 0
         graph = [[] for _ in range(26)]
         for i in range(len(original)):
             graph[ord(original[i]) - 97].append((ord(changed[i]) - 97, cost[i]))
