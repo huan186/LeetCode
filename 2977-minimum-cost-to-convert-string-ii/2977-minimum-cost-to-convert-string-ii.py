@@ -33,22 +33,17 @@ class Solution:
         for i in range(m):
             if dp[i] == inf:
                 continue
-            
             if source[i] == target[i]:
                 dp[i + 1] = min(dp[i + 1], dp[i])
-            
             for length in by_length:
                 j = i + length
                 if j > m:
                     continue
                 s = source[i : j]
                 t = target[i : j]
-
                 if s not in dist or t not in dist:
                     continue
+                dp[j] = min(dp[j], dp[i] + dist[s][t])
 
-                if c != inf:
-                    dp[j] = min(dp[j], dp[i] + dist[s][t])
-        
         return -1 if dp[-1] == inf else dp[-1]
         
