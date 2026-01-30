@@ -43,7 +43,7 @@ class Solution:
                     continue
                 s = source[i : j]
                 t = target[i : j]
-                
+
                 if s not in dist or t not in dist:
                     continue
 
