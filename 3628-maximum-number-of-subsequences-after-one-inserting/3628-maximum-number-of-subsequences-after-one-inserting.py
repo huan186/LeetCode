@@ -1,22 +1,27 @@
 class Solution:
     def numOfSubsequences(self, s: str) -> int:
         n = len(s)
-        ps = [[0] * 3 for _ in range(n + 1)] # prefix sum
+        pref = [[0] * 3 for _ in range(n + 1)]
         for i in range(n):
-            ps[i + 1][0] = ps[i][0] + (1 if s[i] == 'L' else 0)
-            ps[i + 1][1] = ps[i][1] + (1 if s[i] == 'C' else 0)
-            ps[i + 1][2] = ps[i][2] + (1 if s[i] == 'T' else 0)
-        cnt = 0
-        gain_L = 0 # inset a L at 0
-        max_gain_C = 0 # insert a T at n
-        gain_T = 0
+            pref[i + 1][0] = pref[i][0] + (s[i] == 'L')
+            pref[i + 1][1] = pref[i][1] + (s[i] == 'C')
+            pref[i + 1][2] = pref[i][2] + (s[i] == 'T')
+
+        base_LCT = 0
+        gain_insert_L = 0
+        gain_insert_T = 0
+        gain_insert_C = 0
+
         for i in range(n):
             if s[i] == 'C':
-                cnt += ps[i][0] * (ps[n][2] - ps[i + 1][2])
-                gain_L += ps[i][0]
-                gain_T += ps[n][2] - ps[i + 1][2]
-            max_gain_C = max(
-                max_gain_C,
-                ps[i + 1][0] * (ps[n][2] - ps[i + 1][2]) # insert a C at i + 1
+                L_before = pref[i][0]
+                T_after = pref[n][2] - pref[i + 1][2]
+                base_LCT += L_before * T_after
+                gain_insert_L += T_after
+                gain_insert_T += L_before
+            gain_insert_C = max(
+                gain_insert_C,
+                pref[i + 1][0] * (pref[n][2] - pref[i + 1][2])
             )
-        return cnt + max(gain_L, max_gain_C, gain_T)
+
+        return base_LCT + max(gain_insert_L, gain_insert_C, gain_insert_T)
