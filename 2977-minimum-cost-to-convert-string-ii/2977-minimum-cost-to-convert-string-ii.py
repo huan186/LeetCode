@@ -20,8 +20,6 @@ class Solution:
                         continue
                     dist[v[i]][v[j]] = min(dist[v[i]][v[j]], dist[v[i]][v[k]] + dist[v[k]][v[j]])
 
-        # length = set(len(x) for x in v)
-
         # dp
         m = len(source)
         dp = [inf] * (m + 1)
