@@ -17,9 +17,7 @@ class Solution:
                         continue
                     dist[v[i]][v[j]] = min(dist[v[i]][v[j]], dist[v[i]][v[k]] + dist[v[k]][v[j]])
 
-        by_length = defaultdict(list)
-        for x in v:
-            by_length[len(x)].append(x)
+        length = set(len(x) for x in v)
 
         # dp
         m = len(source)
@@ -32,8 +30,8 @@ class Solution:
             if source[i] == target[i]:
                 dp[i + 1] = min(dp[i + 1], dp[i])
 
-            for length in by_length:
-                j = i + length
+            for l in length:
+                j = i + l
                 if j > m:
                     continue
                 s = source[i : j]
