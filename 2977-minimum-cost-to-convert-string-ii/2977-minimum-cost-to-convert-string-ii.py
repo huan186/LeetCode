@@ -1,7 +1,3 @@
-from collections import defaultdict
-from typing import List
-
-
 class Solution:
     def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
         inf = 10 ** 18
@@ -21,7 +17,6 @@ class Solution:
                         continue
                     dist[v[i]][v[j]] = min(dist[v[i]][v[j]], dist[v[i]][v[k]] + dist[v[k]][v[j]])
 
-        # group by length
         by_length = defaultdict(list)
         for x in v:
             by_length[len(x)].append(x)
@@ -33,17 +28,20 @@ class Solution:
         for i in range(m):
             if dp[i] == inf:
                 continue
+
             if source[i] == target[i]:
                 dp[i + 1] = min(dp[i + 1], dp[i])
+
             for length in by_length:
                 j = i + length
                 if j > m:
                     continue
                 s = source[i : j]
                 t = target[i : j]
-                if s not in dist or t not in dist:
+
+                if s not in dist or t not in dist or dist[s][t] == inf:
                     continue
+
                 dp[j] = min(dp[j], dp[i] + dist[s][t])
 
         return -1 if dp[-1] == inf else dp[-1]
-        
