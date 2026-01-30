@@ -3,14 +3,11 @@ class Solution:
         inf = 10 ** 18
 
         # Floyd-Warshall
-        length = set()
         v = list(set(original).union(changed))
         n = len(v)
         dist = {x: {y: 0 if x == y else inf for y in v} for x in v}
         for o, c, w in zip(original, changed, cost):
             dist[o][c] = min(dist[o][c], w)
-            length.add(len(o))
-            length.add(len(c))
         for k in range(n):
             for i in range(n):
                 if dist[v[i]][v[k]] == inf:
@@ -19,6 +16,8 @@ class Solution:
                     if dist[v[k]][v[j]] == inf:
                         continue
                     dist[v[i]][v[j]] = min(dist[v[i]][v[j]], dist[v[i]][v[k]] + dist[v[k]][v[j]])
+
+        length = set(len(x) for x in v)
 
         # dp
         m = len(source)
