@@ -3,7 +3,7 @@ class Solution:
         n = len(s)
         best = None
         digits = list(map(int, s)) * 2
-
+        best_pref = 99
         for shift in range(0, lcm(n, b), b):
             start_idx = n - (shift % n)
 
@@ -16,6 +16,9 @@ class Solution:
                     if pref < min_pref:
                         min_pref = pref
                         best_c0, best_c1 = c0, c1
+            if min_pref > best_pref:
+                continue
+            best_pref = min_pref
 
             t = digits[start_idx: start_idx + n]
             for i in range(n):
