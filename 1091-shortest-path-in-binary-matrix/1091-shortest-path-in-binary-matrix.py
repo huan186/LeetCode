@@ -5,6 +5,7 @@ class Solution:
         m, n = len(grid), len(grid[0])
         queue = deque([(1, 0, 0)])
         visited = [[False] * n for _ in range(m)]
+        visited[0][0] = True
         while queue:
             cost, x, y = queue.popleft()
             if x == m - 1 and y == n - 1:
