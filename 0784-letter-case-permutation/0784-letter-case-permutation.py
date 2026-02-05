@@ -1,10 +1,10 @@
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
-        x = {''}
+        ans = {''}
         for c in s:
-            y = set()
-            for a in x:
-                    y.add(a + c.lower())
-                    y.add(a + c.upper())
-            x = y
-        return list(x)
+            temp = set()
+            for a in ans:
+                    temp.add(a + c.lower())
+                    temp.add(a + c.upper())
+            ans = temp
+        return list(ans)
