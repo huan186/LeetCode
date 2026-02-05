@@ -9,6 +9,7 @@ class Solution:
             return a if b == 0 else gcd(b, a % b)
 
         res = 0
+        inf = float('inf')
 
         def cal_slope(i1, i2):
             x1, y1 = points[i1]
@@ -16,14 +17,14 @@ class Solution:
             dx = x1 - x2
             dy = y1 - y2
             if dx == 0:
-                return 'inf'
+                return (inf, inf)
             l = gcd(dx, dy)
             dx //= l
             dy //= l
             if dx < 0:
                 dx = -dx
                 dy = -dy
-            return '{}/{}'.format(dx, dy)
+            return (dx, dy)
 
         for i in range(n - 1):
             slopes = {}
