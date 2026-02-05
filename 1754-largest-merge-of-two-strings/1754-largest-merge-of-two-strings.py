@@ -1,11 +1,16 @@
 class Solution:
-    @lru_cache
     def largestMerge(self, word1: str, word2: str) -> str:
-        if not word1:
-            return word2
-        if not word2:
-            return word1
-        return max(
-            word1[0] + self.largestMerge(word1[1:], word2),
-            word2[0] + self.largestMerge(word1, word2[1:])
-        )
+        i, j, m, n = 0, 0, len(word1), len(word2)
+        ans = []
+        while i < m or j < n:
+            if i != m and (
+                j == n or
+                word1[i] > word2[j] or
+                word1[i] == word2[j] and word1[i + 1:] >= word2[j + 1:]
+            ):
+                ans.append(word1[i])
+                i += 1
+            else:
+                ans.append(word2[j])
+                j += 1
+        return ''.join(ans)
