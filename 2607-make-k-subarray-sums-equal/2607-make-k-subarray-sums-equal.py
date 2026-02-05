@@ -15,6 +15,8 @@ class Solution:
             a.sort()
             l, r = 0, len(a) - 1
             while l < r:
+                if a[r] == a[l]:
+                    break
                 ops += a[r] - a[l]
                 l += 1
                 r -= 1
