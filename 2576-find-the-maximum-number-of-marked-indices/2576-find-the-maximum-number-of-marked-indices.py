@@ -5,7 +5,7 @@ class Solution:
         i = 0
         ans = 0
         for j in range((n + 1) // 2, n):
-            if 2 * nums[i] <= nums[j]:
+            if (nums[i] << 1) <= nums[j]:
                 ans += 2
                 i += 1
         return ans
