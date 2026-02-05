@@ -5,8 +5,8 @@ class Solution:
         if n <= 2:
             return n
 
-        def lcm(a, b):
-            return a if b == 0 else lcm(b, a % b)
+        def gcd(a, b):
+            return a if b == 0 else gcd(b, a % b)
 
         res = 0
 
@@ -17,7 +17,7 @@ class Solution:
             dy = y1 - y2
             if dx == 0:
                 return 'inf'
-            l = lcm(dx, dy)
+            l = gcd(dx, dy)
             dx //= l
             dy //= l
             if dx < 0:
