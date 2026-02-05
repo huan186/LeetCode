@@ -1,13 +1,10 @@
 class Solution:
     def totalHammingDistance(self, nums: List[int]) -> int:
-        cnt = [0] * 32
-        for num in nums:
-            i = 0
-            while num > 0:
-                cnt[i] += num & 1
-                i += 1
-                num >>= 1
-        res = 0
-        n = len(nums)
-        return sum(c * (n - c) for c in cnt)
+        ans, n = 0, len(nums)
+        for i in range(30):
+            bit_cnt = 0
+            for num in nums:
+                bit_cnt += (num >> i) & 1
+            ans += bit_cnt * (n - bit_cnt)
+        return ans
                 
