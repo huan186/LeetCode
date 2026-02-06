@@ -8,6 +8,6 @@ class Solution:
             for j in range(n):
                 if nums1[i] == nums2[j]:
                     nxt[j + 1] = dp[j] + 1
-                    ans = max(ans, nxt[j + 1])
+            ans = max(ans, max(nxt))
             dp = nxt
         return ans
