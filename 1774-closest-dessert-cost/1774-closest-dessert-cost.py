@@ -20,6 +20,8 @@ class Solution:
         dfs(0, 0)
 
         best = float('inf')
+        topping_costs = list(topping_costs)
+        topping_costs.sort()
         for b in baseCosts:
             for t in topping_costs:
                 total = b + t
@@ -27,5 +29,5 @@ class Solution:
                 d = abs(diff) - abs(best)
                 if d < 0 or d == 0 and diff < best:
                     best = diff
-
+                if total > target: break
         return target + best
