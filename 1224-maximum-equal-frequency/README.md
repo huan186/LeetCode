@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-equal-frequency">1224. Maximum Equal Frequency</a></h2><h3>Hard</h3><hr><p>Given an array <code>nums</code> of positive integers, return the longest possible length of an array prefix of <code>nums</code>, such that it is possible to remove <strong>exactly one</strong> element from this prefix so that every number that has appeared in it will have the same number of occurrences.</p>
+<h2><a href="https://leetcode.com/problems/maximum-equal-frequency/">1224. Maximum Equal Frequency</a></h2><h3>Hard</h3><hr><p>Given an array <code>nums</code> of positive integers, return the longest possible length of an array prefix of <code>nums</code>, such that it is possible to remove <strong>exactly one</strong> element from this prefix so that every number that has appeared in it will have the same number of occurrences.</p>
 
 <p>If after removing one element there are no remaining elements, it&#39;s still considered that every appeared number has the same number of ocurrences (0).</p>
 
