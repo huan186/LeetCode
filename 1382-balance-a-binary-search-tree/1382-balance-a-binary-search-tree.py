@@ -13,10 +13,7 @@ class Solution:
             if l > r:
                 return None
             m = l + (r - l) // 2
-            node = TreeNode(nums[m])
-            node.left = build(l, m - 1)
-            node.right = build(m + 1, r)
-            return node
-        
+            return TreeNode(nums[m], build(l, m - 1), build(m + 1, r))
+
         inorder(root)
         return build(0, len(nums) - 1)
