@@ -5,18 +5,14 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    def __init__(self):
+        self.nums = set()
+
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
-        nums = set()
-        self.ans = False
-        def dfs(node):
-            if not node:
-                return
-            if (k - node.val) in nums:
-                self.ans = True
-            nums.add(node.val)
-            dfs(node.left)
-            dfs(node.right)
-            
-        dfs(root)
-        return self.ans
+        if not root:
+            return False
+        if (k - root.val) in self.nums:
+            return True
+        self.nums.add(root.val)
+        return self.findTarget(root.left, k) or self.findTarget(root.right, k)
                 
