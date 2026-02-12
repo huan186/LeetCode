@@ -14,9 +14,6 @@ class Solution:
 
         if sum(in_deg) != n - 1:
             return False
-        
-        if n == 1:
-            return True
 
         root = -1
         for i in range(n):
@@ -24,7 +21,7 @@ class Solution:
                 if root != -1:
                     return False
                 root = i
-            if in_deg[i] > 1 or out_deg[i] > 2 or in_deg[i] + out_deg[i] == 0:
+            if in_deg[i] > 1 or out_deg[i] > 2:
                 return False
 
         visited = set()
