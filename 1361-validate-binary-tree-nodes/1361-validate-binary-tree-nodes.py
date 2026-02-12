@@ -12,7 +12,7 @@ class Solution:
             helper(i, leftChild[i])
             helper(i, rightChild[i])
 
-        if sum(in_deg) + sum(out_deg) != 2 * n - 2:
+        if sum(in_deg) != n - 1:
             return False
         
         if n == 1:
