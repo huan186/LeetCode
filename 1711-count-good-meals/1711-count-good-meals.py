@@ -1,10 +1,11 @@
 class Solution:
     def countPairs(self, deliciousness: List[int]) -> int:
         res = 0
+        powers = [1 << i for i in range(22)]
         freq = Counter(deliciousness)
         for d, f in freq.items():
-            for i in range(22):
-                c = (1 << i) - d
+            for p in powers:
+                c = p - d
                 if c < d:
                     continue
                 elif c == d:
