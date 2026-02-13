@@ -1,15 +1,14 @@
 class Solution:
     def countPairs(self, deliciousness: List[int]) -> int:
-        MOD = 10**9 + 7
-        count = {}
         res = 0
-        
-        for x in deliciousness:
+        freq = Counter(deliciousness)
+        for d, f in freq.items():
             for i in range(22):
-                target = (1 << i) - x
-                if target in count:
-                    res += count[target]
-            
-            count[x] = count.get(x, 0) + 1
-        
-        return res % MOD
+                c = (1 << i) - d
+                if c < d:
+                    continue
+                elif c == d:
+                    res += f * (f - 1) // 2
+                elif c in freq:
+                    res += f * freq[c]
+        return res % (10 ** 9 + 7)
