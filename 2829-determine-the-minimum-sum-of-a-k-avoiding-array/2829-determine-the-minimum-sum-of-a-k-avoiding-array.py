@@ -1,11 +1,9 @@
 class Solution:
     def minimumSum(self, n: int, k: int) -> int:
+        def consecutive_sum(x):
+            return x * (x + 1) >> 1
         half = k >> 1
-        i = 1
-        res = 0
-        while n:
-            if i <= half or i >= k:
-                res += i
-                n -= 1
-            i += 1
-        return res
+        if n <= half:
+            return consecutive_sum(n)
+        r = n - half
+        return consecutive_sum(half) + consecutive_sum(r) + r * (k - 1)
