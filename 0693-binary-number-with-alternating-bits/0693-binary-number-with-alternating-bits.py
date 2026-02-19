@@ -1,6 +1,6 @@
 class Solution:
     def hasAlternatingBits(self, n: int) -> bool:
-        prev_bit = -1
+        prev_bit = ~(n & 1)
         while n > 0:
             curr_bit = n & 1
             if prev_bit == curr_bit:
