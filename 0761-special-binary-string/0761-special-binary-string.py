@@ -1,4 +1,5 @@
 class Solution:
+    @lru_cache(None)
     def makeLargestSpecial(self, s: str) -> str:
         i, n = 0, len(s)
         parts = []
