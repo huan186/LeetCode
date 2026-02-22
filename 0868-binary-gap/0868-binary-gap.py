@@ -1,7 +1,5 @@
 class Solution:
     def binaryGap(self, n: int) -> int:
-        if n & n - 1 == 0:
-            return 0
         last = -1
         res = 0
         for i in range(32):
