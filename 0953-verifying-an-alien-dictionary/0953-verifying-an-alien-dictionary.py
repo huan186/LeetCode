@@ -1,16 +1,14 @@
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
-        mapping = {order[i] : i for i in range(len(order))}
-        def compare(s1, s2):
-            l1, l2 = len(s1), len(s2)
-            for i in range(min(l1, l2)):
-                d = mapping[s2[i]] - mapping[s1[i]]
-                if d > 0:
-                    return True
-                if d < 0:
+        pos = {c: i for i, c in enumerate(order)}
+        
+        for w1, w2 in zip(words, words[1:]):
+            for c1, c2 in zip(w1, w2):
+                if pos[c1] < pos[c2]:
+                    break
+                if pos[c1] > pos[c2]:
                     return False
-            return l1 <= l2
-        for i in range(len(words) - 1):
-            if not compare(words[i], words[i + 1]):
-                return False
+            else:
+                if len(w1) > len(w2):
+                    return False
         return True
