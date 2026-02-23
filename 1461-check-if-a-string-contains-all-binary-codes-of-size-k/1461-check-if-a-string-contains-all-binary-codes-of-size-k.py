@@ -12,5 +12,4 @@ class Solution:
                 seen.add(num)
                 if len(seen) == need:
                     return True
-        
         return False
