@@ -1,7 +1,7 @@
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
         n = 2 ** k
-        if len(s) < n:
+        if len(s) - k + 1 < n:
             return False
         num = 0 if k == 1 else int(s[0:k-1], 2)
         seen = set()
