@@ -21,17 +21,18 @@ class Solution:
                 top3 = cpl
 
         res = [0] * n
+        
+        def find_max(mx, mn, add):
+            if mx != top1:
+                return max(top1, add)
+            if mn != top2:
+                return max(top2, add)
+            return max(top3, add)
 
         for i in range(n):
             e1 = -1 if i == 0 else adj[i - 1]
             e2 = -1 if i == n - 1 else adj[i]
             a = -1 if i == 0 or i == n - 1 else common_prefix_len(words[i - 1], words[i + 1])
+            res[i] = find_max(max(e1, e2), min(e1, e2), a)
 
-            arr = [top1, top2, top3, a]
-
-            for x in [e1, e2]:
-                if x in arr:
-                    arr.remove(x)
-
-            res[i] = max(arr)
         return res
