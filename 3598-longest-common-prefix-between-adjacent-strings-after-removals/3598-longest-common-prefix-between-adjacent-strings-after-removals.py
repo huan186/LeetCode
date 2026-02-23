@@ -22,14 +22,14 @@ class Solution:
             elif cpl > top3:
                 top3 = cpl
 
-        res = [0] * n
-
         def find_max(mx, mn, add):
             if mx != top1:
                 return max(top1, add)
             if mn != top2:
                 return max(top2, add)
             return max(top3, add)
+
+        res = [0] * n
 
         for i in range(n):
             e1 = -1 if i == 0 else adj[i - 1]
