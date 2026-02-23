@@ -7,29 +7,31 @@ class Solution:
             return min(len(a), len(b))
 
         n = len(words)
-        l1, l2, l3 = 0, 0, 0
+        top1, top2, top3 = 0, 0, 0
 
-        adj_pref_len = [0] * (n - 1)
+        adj = [0] * (n - 1)
         for i in range(n - 1):
             cpl = common_prefix_len(words[i], words[i + 1])
-            adj_pref_len[i] = cpl
-            if cpl >= l1:
-                l1, l2, l3 = cpl, l1, l2
-            elif cpl >= l2:
-                l2, l3 = cpl, l2
-            elif cpl > l3:
-                l3 = cpl
+            adj[i] = cpl
+            if cpl >= top1:
+                top1, top2, top3 = cpl, top1, top2
+            elif cpl >= top2:
+                top2, top3 = cpl, top2
+            elif cpl > top3:
+                top3 = cpl
 
         res = [0] * n
 
         for i in range(n):
-            eliminate1 = -1 if i == 0 else adj_pref_len[i - 1]
-            eliminate2 = -1 if i == n - 1 else adj_pref_len[i]
-            take = -1 if i == 0 or i == n - 1 else common_prefix_len(words[i - 1], words[i + 1])
-            arr = [l1, l2, l3, take]
-            for x in [eliminate1, eliminate2]:
+            e1 = -1 if i == 0 else adj[i - 1]
+            e2 = -1 if i == n - 1 else adj[i]
+            a = -1 if i == 0 or i == n - 1 else common_prefix_len(words[i - 1], words[i + 1])
+
+            arr = [top1, top2, top3, a]
+
+            for x in [e1, e2]:
                 if x in arr:
                     arr.remove(x)
-            res[i] = max(arr)
 
+            res[i] = max(arr)
         return res
