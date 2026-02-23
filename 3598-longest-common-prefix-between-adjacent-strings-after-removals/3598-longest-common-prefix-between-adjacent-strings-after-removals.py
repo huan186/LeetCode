@@ -1,10 +1,12 @@
 class Solution:
     def longestCommonPrefix(self, words: List[str]) -> List[int]:
         def common_prefix_len(a, b):
-            for idx, (x, y) in enumerate(zip(a, b)):
-                if x != y:
-                    return idx
-            return min(len(a), len(b))
+            cnt = 0
+            for c1, c2 in zip(a, b):
+                if c1 != c2:
+                    break
+                cnt += 1
+            return cnt
 
         n = len(words)
         top1, top2, top3 = 0, 0, 0
@@ -21,7 +23,7 @@ class Solution:
                 top3 = cpl
 
         res = [0] * n
-        
+
         def find_max(mx, mn, add):
             if mx != top1:
                 return max(top1, add)
@@ -34,5 +36,4 @@ class Solution:
             e2 = -1 if i == n - 1 else adj[i]
             a = -1 if i == 0 or i == n - 1 else common_prefix_len(words[i - 1], words[i + 1])
             res[i] = find_max(max(e1, e2), min(e1, e2), a)
-
         return res
