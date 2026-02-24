@@ -5,6 +5,7 @@ class Solution:
         for i, v in enumerate(elements):
             if v in seen:
                 continue
+            seen.add(v)
             for j in range(v, 100001, v):
                 if indices[j] == -1:
                     indices[j] = i
