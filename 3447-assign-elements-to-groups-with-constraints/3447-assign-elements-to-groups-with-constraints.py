@@ -1,12 +1,13 @@
 class Solution:
     def assignElements(self, groups: List[int], elements: List[int]) -> List[int]:
         seen = set()
-        indices = [-1] * 100001
+        largest = max(groups)
+        indices = [-1] * (largest + 1)
         for i, v in enumerate(elements):
-            if v in seen:
+            if v > largest or v in seen:
                 continue
             seen.add(v)
-            for j in range(v, 100001, v):
+            for j in range(v, largest + 1, v):
                 if indices[j] == -1:
                     indices[j] = i
         return [indices[g] for g in groups]
