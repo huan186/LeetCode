@@ -9,7 +9,7 @@ class Solution:
         def dfs(node, parent_value):
             if not node:
                 return 0
-            current_value = (parent_value << 1) + node.val
+            current_value = (parent_value << 1) | node.val
             if not node.left and not node.right:
                 return current_value
             return dfs(node.left, current_value) + dfs(node.right, current_value)
