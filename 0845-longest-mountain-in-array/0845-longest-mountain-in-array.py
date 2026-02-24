@@ -9,8 +9,6 @@ class Solution:
                 if up:
                     down += 1
                     res = max(res, up + down + 1)
-                else:
-                    down = 0
             else:
                 if down:
                     up = 1
