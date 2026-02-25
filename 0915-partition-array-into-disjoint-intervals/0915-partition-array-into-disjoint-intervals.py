@@ -3,7 +3,6 @@ class Solution:
         inf = 10 ** 18
         n = len(nums)
         min_postfix = [inf] * n
-        min_postfix[-1] = nums[-1]
         for i in range(n - 2, -1, -1):
             min_postfix[i] = min(nums[i + 1], min_postfix[i + 1])
         largest_left = 0
