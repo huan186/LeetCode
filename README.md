@@ -15,4 +15,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0696-count-binary-substrings](https://github.com/huan186/LeetCode/tree/main/0696-count-binary-substrings/) | Easy |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0696-count-binary-substrings](https://github.com/huan186/LeetCode/tree/main/0696-count-binary-substrings/) | Easy |
 <!---LeetCode Topics End-->
