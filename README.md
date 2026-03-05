@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2104-sum-of-subarray-ranges](https://github.com/huan186/LeetCode/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
@@ -19,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
+| [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -45,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
+| [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 ## Sorting
@@ -94,4 +97,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2104-sum-of-subarray-ranges](https://github.com/huan186/LeetCode/tree/main/2104-sum-of-subarray-ranges/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 <!---LeetCode Topics End-->
