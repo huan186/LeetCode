@@ -2,8 +2,8 @@ class Solution:
     def countWays(self, ranges: List[List[int]]) -> int:
         mod = 10 ** 9 + 7
         ranges.sort()
-        res = 2
-        prev_end = ranges[0][0]
+        res = 1
+        prev_end = -1
         for start, end in ranges:
             if prev_end < start:
                 res = (res << 1) % mod
