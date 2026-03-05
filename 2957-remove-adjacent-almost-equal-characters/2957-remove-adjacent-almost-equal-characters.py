@@ -1,3 +1,12 @@
 class Solution:
     def removeAlmostEqualCharacters(self, word: str) -> int:
-        return (sum(abs(ord(a) - ord(b)) <= 1 for a, b in zip(word[:-1], word[1:])) + 1) // 2
+        i = 0
+        n = len(word)
+        res = 0
+        while i < n - 1:
+            if abs(ord(word[i]) - ord(word[i + 1])) <= 1:
+                res += 1
+                i += 2
+            else:
+                i += 1
+        return res
