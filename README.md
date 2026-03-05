@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/huan186/LeetCode/tree/main/0198-house-robber/) | Medium |
+| [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
@@ -46,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
@@ -101,4 +103,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+## Randomized
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 <!---LeetCode Topics End-->
