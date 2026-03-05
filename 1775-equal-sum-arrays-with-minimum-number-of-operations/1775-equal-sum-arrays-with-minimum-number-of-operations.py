@@ -1,13 +1,7 @@
 class Solution:
     def minOperations(self, nums1: List[int], nums2: List[int]) -> int:
-        m, n = len(nums1), len(nums2)
-        min_sum = max(m, n)
-        max_sum = min(6 * m, 6 * n)
-        if min_sum > max_sum:
-            return -1
         diff = sum(nums1) - sum(nums2)
-        if diff == 0:
-            return 0
+
         if diff < 0:
             nums1, nums2 = nums2, nums1
             diff = -diff
@@ -23,4 +17,4 @@ class Solution:
             q = min(freq1[j + 1], (diff + j - 1) // j)
             ans += q
             diff -= min(diff, q * j)
-        return ans
+        return ans if diff == 0 else -1
