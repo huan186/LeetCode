@@ -1,39 +1,33 @@
 import random
 
 class RandomizedSet:
+
     def __init__(self):
-        self.len = 0
-        self.mapping_idx_val = {}
-        self.mapping_val_idx = {}
+        self.arr = []
+        self.pos = {}
 
     def insert(self, val: int) -> bool:
-        if val not in self.mapping_val_idx:
-            self.mapping_idx_val[self.len] = val
-            self.mapping_val_idx[val] = self.len
-            self.len += 1
-            return True
-        return False
+        if val in self.pos:
+            return False
+
+        self.pos[val] = len(self.arr)
+        self.arr.append(val)
+        return True
 
     def remove(self, val: int) -> bool:
-        if val in self.mapping_val_idx:
-            self.len -= 1
-            idx = self.mapping_val_idx[val]
-            last_idx = self.len
+        if val not in self.pos:
+            return False
 
-            if idx != last_idx:
-                last_val = self.mapping_idx_val[last_idx]
+        idx = self.pos[val]
+        last = self.arr[-1]
 
-                # move last element to removed position
-                self.mapping_idx_val[idx] = last_val
-                self.mapping_val_idx[last_val] = idx
+        self.arr[idx] = last
+        self.pos[last] = idx
 
-            # delete last element
-            del self.mapping_idx_val[last_idx]
-            del self.mapping_val_idx[val]
+        self.arr.pop()
+        del self.pos[val]
 
-            return True
-        return False
+        return True
 
     def getRandom(self) -> int:
-        idx = random.randint(0, self.len - 1)
-        return self.mapping_idx_val[idx]
+        return random.choice(self.arr)
