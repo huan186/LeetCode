@@ -13,5 +13,7 @@ class Solution:
         for gain in range(5, 0, -1):
             q = min(cnt[gain], (diff + gain - 1) // gain)
             res += q
-            diff -= min(diff, q * gain)
-        return res if diff == 0 else -1
+            diff -= q * gain
+            if diff <= 0:
+                return res
+        return -1
