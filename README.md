@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [2104-sum-of-subarray-ranges](https://github.com/huan186/LeetCode/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 | [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
@@ -104,6 +105,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/huan186/LeetCode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [2177-find-three-consecutive-integers-that-sum-to-a-given-number](https://github.com/huan186/LeetCode/tree/main/2177-find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
@@ -122,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [2177-find-three-consecutive-integers-that-sum-to-a-given-number](https://github.com/huan186/LeetCode/tree/main/2177-find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium |
 ## Design
 | Problem Name | Difficulty |
