@@ -8,7 +8,7 @@ class Solution:
             sqr_r = r ** 2
             for i in range(x - r, x + r + 1):
                 for j in range(y - r, y + r + 1):
-                    if sqr_distance(x, y, i, j) <= sqr_r:
+                    if (i, j) not in points and sqr_distance(x, y, i, j) <= sqr_r:
                         points.add((i, j))
 
         return len(points)
