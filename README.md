@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/huan186/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -27,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
+| [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
 | [3675-minimum-operations-to-transform-string](https://github.com/huan186/LeetCode/tree/main/3675-minimum-operations-to-transform-string/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
