@@ -1,4 +1,5 @@
 class Solution:
+    @lru_cache(None)
     def validStrings(self, n: int) -> List[str]:
         if n == 1:
             return ['0', '1']
