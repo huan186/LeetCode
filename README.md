@@ -35,11 +35,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0151-reverse-words-in-a-string](https://github.com/huan186/LeetCode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0696-count-binary-substrings](https://github.com/huan186/LeetCode/tree/main/0696-count-binary-substrings/) | Easy |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0151-reverse-words-in-a-string](https://github.com/huan186/LeetCode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0696-count-binary-substrings](https://github.com/huan186/LeetCode/tree/main/0696-count-binary-substrings/) | Easy |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/huan186/LeetCode/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/huan186/LeetCode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
