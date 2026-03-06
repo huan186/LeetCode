@@ -30,10 +30,7 @@ class Bitset:
         return self.size - len(self.ones) if self.flipped else len(self.ones)
 
     def toString(self) -> str:
-        res = []
-        for i in range(self.size):
-            v = 1 if i in self.ones else 0
-            if self.flipped:
-                v = 1 - v
-            res.append(str(v))
-        return ''.join(res)
+        return ''.join(
+            str((1 if i in self.ones else 0) ^ self.flipped)
+            for i in range(self.size)
+        )
