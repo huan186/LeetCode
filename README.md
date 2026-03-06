@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2104-sum-of-subarray-ranges](https://github.com/huan186/LeetCode/tree/main/2104-sum-of-subarray-ranges/) | Medium |
+| [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
@@ -46,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/huan186/LeetCode/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/huan186/LeetCode/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/huan186/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+| [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3003-maximize-the-number-of-partitions-after-operations](https://github.com/huan186/LeetCode/tree/main/3003-maximize-the-number-of-partitions-after-operations/) | Hard |
@@ -56,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
+| [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 ## Sorting
@@ -122,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 ## Randomized
 | Problem Name | Difficulty |
 | ------- | ------- |
