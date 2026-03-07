@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating">1888. Minimum Number of Flips to Make the Binary String Alternating</a></h2><h3>Medium</h3><hr><p>You are given a binary string <code>s</code>. You are allowed to perform two types of operations on the string in any sequence:</p>
+<h2><a href="https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/?envType=daily-question&envId=2026-03-07">1888. Minimum Number of Flips to Make the Binary String Alternating</a></h2><h3>Medium</h3><hr><p>You are given a binary string <code>s</code>. You are allowed to perform two types of operations on the string in any sequence:</p>
 
 <ul>
 	<li><strong>Type-1: Remove</strong> the character at the start of the string <code>s</code> and <strong>append</strong> it to the end of the string.</li>
