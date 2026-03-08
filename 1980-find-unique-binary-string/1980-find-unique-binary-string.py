@@ -1,10 +1,9 @@
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
+        n = len(nums[0])
         seen = set(nums)
 
         self.ans = None
-
-        n = len(nums[0])
 
         def dfs(curr):
             if len(curr) == n:
@@ -16,4 +15,5 @@ class Solution:
             dfs(curr + '1')
         
         dfs('')
+
         return self.ans
