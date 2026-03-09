@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
+| [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
@@ -48,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0151-reverse-words-in-a-string](https://github.com/huan186/LeetCode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0696-count-binary-substrings](https://github.com/huan186/LeetCode/tree/main/0696-count-binary-substrings/) | Easy |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
+| [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -82,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
+| [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
