@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -32,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
+| [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
@@ -43,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
