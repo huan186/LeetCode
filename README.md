@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/huan186/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
@@ -27,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
@@ -36,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
