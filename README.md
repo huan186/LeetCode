@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
+| [1619-mean-of-array-after-removing-some-elements](https://github.com/huan186/LeetCode/tree/main/1619-mean-of-array-after-removing-some-elements/) | Easy |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -89,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
+| [1619-mean-of-array-after-removing-some-elements](https://github.com/huan186/LeetCode/tree/main/1619-mean-of-array-after-removing-some-elements/) | Easy |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
