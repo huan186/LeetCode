@@ -1,24 +1,32 @@
+from functools import lru_cache
+
 class Solution:
     def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:
         MOD = 10**9 + 7
-        
-        dp0 = [[0]*(one+1) for _ in range(zero+1)]
-        dp1 = [[0]*(one+1) for _ in range(zero+1)]
-        
-        for i in range(1, min(limit, zero)+1):
-            dp0[i][0] = 1
-        for j in range(1, min(limit, one)+1):
-            dp1[0][j] = 1
-        
-        for i in range(zero+1):
-            for j in range(one+1):
-                
-                if i > 0:
-                    for k in range(1, min(limit, i)+1):
-                        dp0[i][j] = (dp0[i][j] + dp1[i-k][j]) % MOD
-                
-                if j > 0:
-                    for k in range(1, min(limit, j)+1):
-                        dp1[i][j] = (dp1[i][j] + dp0[i][j-k]) % MOD
-        
-        return (dp0[zero][one] + dp1[zero][one]) % MOD
+
+        @lru_cache(None)
+        def dfs(z, o, last, run):
+            if z == 0 and o == 0:
+                return 1
+
+            ans = 0
+
+            # add 0
+            if z > 0:
+                if last == 0:
+                    if run < limit:
+                        ans += dfs(z-1, o, 0, run+1)
+                else:
+                    ans += dfs(z-1, o, 0, 1)
+
+            # add 1
+            if o > 0:
+                if last == 1:
+                    if run < limit:
+                        ans += dfs(z, o-1, 1, run+1)
+                else:
+                    ans += dfs(z, o-1, 1, 1)
+
+            return ans % MOD
+
+        return dfs(zero, one, -1, 0)
