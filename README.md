@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/huan186/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
+| [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
@@ -35,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 ## Two Pointers
@@ -93,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [3003-maximize-the-number-of-partitions-after-operations](https://github.com/huan186/LeetCode/tree/main/3003-maximize-the-number-of-partitions-after-operations/) | Hard |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/huan186/LeetCode/tree/main/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 ## Bitmask
@@ -162,6 +165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/huan186/LeetCode/tree/main/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 ## Geometry
