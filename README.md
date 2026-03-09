@@ -167,6 +167,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0951-flip-equivalent-binary-trees](https://github.com/huan186/LeetCode/tree/main/0951-flip-equivalent-binary-trees/) | Medium |
+| [2236-root-equals-sum-of-children](https://github.com/huan186/LeetCode/tree/main/2236-root-equals-sum-of-children/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -175,6 +176,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0951-flip-equivalent-binary-trees](https://github.com/huan186/LeetCode/tree/main/0951-flip-equivalent-binary-trees/) | Medium |
+| [2236-root-equals-sum-of-children](https://github.com/huan186/LeetCode/tree/main/2236-root-equals-sum-of-children/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
