@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/huan186/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
+| [3861-minimum-capacity-box](https://github.com/huan186/LeetCode/tree/main/3861-minimum-capacity-box/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
