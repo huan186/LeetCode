@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/huan186/LeetCode/tree/main/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3675-minimum-operations-to-transform-string](https://github.com/huan186/LeetCode/tree/main/3675-minimum-operations-to-transform-string/) | Medium |
 | [3803-count-residue-prefixes](https://github.com/huan186/LeetCode/tree/main/3803-count-residue-prefixes/) | Easy |
+| [3863-minimum-operations-to-sort-a-string](https://github.com/huan186/LeetCode/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
