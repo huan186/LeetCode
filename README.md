@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3675-minimum-operations-to-transform-string](https://github.com/huan186/LeetCode/tree/main/3675-minimum-operations-to-transform-string/) | Medium |
 | [3803-count-residue-prefixes](https://github.com/huan186/LeetCode/tree/main/3803-count-residue-prefixes/) | Easy |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/huan186/LeetCode/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
+| [3864-minimum-cost-to-partition-a-binary-string](https://github.com/huan186/LeetCode/tree/main/3864-minimum-cost-to-partition-a-binary-string/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -202,8 +203,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/huan186/LeetCode/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/huan186/LeetCode/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
+| [3864-minimum-cost-to-partition-a-binary-string](https://github.com/huan186/LeetCode/tree/main/3864-minimum-cost-to-partition-a-binary-string/) | Hard |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3864-minimum-cost-to-partition-a-binary-string](https://github.com/huan186/LeetCode/tree/main/3864-minimum-cost-to-partition-a-binary-string/) | Hard |
 <!---LeetCode Topics End-->
