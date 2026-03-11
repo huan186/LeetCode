@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/huan186/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
 | [3861-minimum-capacity-box](https://github.com/huan186/LeetCode/tree/main/3861-minimum-capacity-box/) | Easy |
+| [3862-find-the-smallest-balanced-index](https://github.com/huan186/LeetCode/tree/main/3862-find-the-smallest-balanced-index/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/huan186/LeetCode/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/huan186/LeetCode/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
+| [3862-find-the-smallest-balanced-index](https://github.com/huan186/LeetCode/tree/main/3862-find-the-smallest-balanced-index/) | Medium |
 | [3864-minimum-cost-to-partition-a-binary-string](https://github.com/huan186/LeetCode/tree/main/3864-minimum-cost-to-partition-a-binary-string/) | Hard |
 ## Memoization
 | Problem Name | Difficulty |
