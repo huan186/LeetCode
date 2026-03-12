@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 | [3675-minimum-operations-to-transform-string](https://github.com/huan186/LeetCode/tree/main/3675-minimum-operations-to-transform-string/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -215,4 +216,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3864-minimum-cost-to-partition-a-binary-string](https://github.com/huan186/LeetCode/tree/main/3864-minimum-cost-to-partition-a-binary-string/) | Hard |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Minimum Spanning Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 <!---LeetCode Topics End-->
