@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/huan186/LeetCode/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/huan186/LeetCode/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
+| [1849-splitting-a-string-into-descending-consecutive-values](https://github.com/huan186/LeetCode/tree/main/1849-splitting-a-string-into-descending-consecutive-values/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/huan186/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
@@ -136,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
+| [1849-splitting-a-string-into-descending-consecutive-values](https://github.com/huan186/LeetCode/tree/main/1849-splitting-a-string-into-descending-consecutive-values/) | Medium |
 | [2249-count-lattice-points-inside-a-circle](https://github.com/huan186/LeetCode/tree/main/2249-count-lattice-points-inside-a-circle/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
@@ -195,6 +197,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
+| [1849-splitting-a-string-into-descending-consecutive-values](https://github.com/huan186/LeetCode/tree/main/1849-splitting-a-string-into-descending-consecutive-values/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/huan186/LeetCode/tree/main/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 ## Geometry
