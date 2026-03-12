@@ -1,75 +1,74 @@
 class DSU:
     def __init__(self, n):
-        self.p=list(range(n))
-        self.r=[0]*n
+        self.p = list(range(n))
+        self.r = [0] * n
 
-    def find(self,x):
-        if self.p[x]!=x:
-            self.p[x]=self.find(self.p[x])
+    def find(self, x):
+        if self.p[x] != x:
+            self.p[x] = self.find(self.p[x])
         return self.p[x]
 
-    def union(self,a,b):
-        pa,pb=self.find(a),self.find(b)
-        if pa==pb:
+    def union(self, a, b):
+        pa, pb = self.find(a), self.find(b)
+        if pa == pb:
             return False
-        if self.r[pa]<self.r[pb]:
-            pa,pb=pb,pa
-        self.p[pb]=pa
-        if self.r[pa]==self.r[pb]:
-            self.r[pa]+=1
+        if self.r[pa] < self.r[pb]:
+            pa, pb = pb, pa
+        self.p[pb] = pa
+        if self.r[pa] == self.r[pb]:
+            self.r[pa] += 1
         return True
 
 
 class Solution:
-    def maxStability(self,n,edges,k):
+    def maxStability(self, n, edges, k):
 
         def check(T):
-            dsu=DSU(n)
-            used=0
-            upgrades=0
+            dsu = DSU(n)
+            used = 0
+            upgrades = 0
 
-            optionalA=[]
-            optionalB=[]
+            optional_a = []
+            optional_b = []
 
-            for u,v,s,must in edges:
+            for u, v, s, must in edges:
 
-                if must==1:
-                    if s<T:
+                if must == 1:
+                    if s < T:
                         return False
-                    if not dsu.union(u,v):
+                    if not dsu.union(u, v):
                         return False
-                    used+=1
+                    used += 1
 
                 else:
-                    if s>=T:
-                        optionalA.append((u,v))
-                    elif s*2>=T:
-                        optionalB.append((u,v))
+                    if s >= T:
+                        optional_a.append((u, v))
+                    elif s * 2 >= T:
+                        optional_b.append((u, v))
 
-            for u,v in optionalA:
-                if used==n-1: break
-                if dsu.union(u,v):
-                    used+=1
+            for u, v in optional_a:
+                if used == n - 1: break
+                if dsu.union(u, v):
+                    used += 1
 
-            for u,v in optionalB:
-                if used==n-1: break
-                if upgrades==k: break
-                if dsu.union(u,v):
-                    upgrades+=1
-                    used+=1
+            for u, v in optional_b:
+                if used == n - 1: break
+                if upgrades == k: break
+                if dsu.union(u, v):
+                    upgrades += 1
+                    used += 1
 
-            return used==n-1 and upgrades<=k
+            return used == n - 1 and upgrades <= k
 
+        lo, hi = 1, 2 * 10 ** 5
+        ans = -1
 
-        lo,hi=1,2*10**5
-        ans=-1
-
-        while lo<=hi:
-            mid=(lo+hi)//2
+        while lo <= hi:
+            mid = (lo + hi) // 2
             if check(mid):
-                ans=mid
-                lo=mid+1
+                ans = mid
+                lo = mid + 1
             else:
-                hi=mid-1
+                hi = mid - 1
 
         return ans
