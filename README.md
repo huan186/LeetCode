@@ -194,6 +194,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0797-all-paths-from-source-to-target](https://github.com/huan186/LeetCode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0951-flip-equivalent-binary-trees](https://github.com/huan186/LeetCode/tree/main/0951-flip-equivalent-binary-trees/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [0797-all-paths-from-source-to-target](https://github.com/huan186/LeetCode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1849-splitting-a-string-into-descending-consecutive-values](https://github.com/huan186/LeetCode/tree/main/1849-splitting-a-string-into-descending-consecutive-values/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -240,6 +242,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0797-all-paths-from-source-to-target](https://github.com/huan186/LeetCode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Minimum Spanning Tree
 | Problem Name | Difficulty |
@@ -252,5 +255,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0797-all-paths-from-source-to-target](https://github.com/huan186/LeetCode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
 <!---LeetCode Topics End-->
