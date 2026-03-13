@@ -26,7 +26,7 @@ class Solution:
             if keys == (1 << key_cnt) - 1:
                 return steps
 
-            for dx, dy in [(1,0),(0,1),(-1,0),(0,-1)]:
+            for dx, dy in ((1, 0), (0, 1), (-1, 0), (0, -1)):
                 nx, ny = x + dx, y + dy
 
                 if not (0 <= nx < m and 0 <= ny < n):
@@ -39,11 +39,11 @@ class Solution:
                 nkeys = keys
 
                 if 'A' <= cell <= 'F':
-                    if not (keys & (1 << (ord(cell)-ord('A')))):
+                    if not (keys & (1 << (ord(cell) - ord('A')))):
                         continue
 
                 if 'a' <= cell <= 'f':
-                    nkeys |= 1 << (ord(cell)-ord('a'))
+                    nkeys |= 1 << (ord(cell) - ord('a'))
 
                 nv = (nx << 11) | (ny << 6) | nkeys
 
