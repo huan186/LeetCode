@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
 | [1619-mean-of-array-after-removing-some-elements](https://github.com/huan186/LeetCode/tree/main/1619-mean-of-array-after-removing-some-elements/) | Easy |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/huan186/LeetCode/tree/main/1685-sum-of-absolute-differences-in-a-sorted-array/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -168,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/huan186/LeetCode/tree/main/1685-sum-of-absolute-differences-in-a-sorted-array/) | Medium |
 | [1806-minimum-number-of-operations-to-reinitialize-a-permutation](https://github.com/huan186/LeetCode/tree/main/1806-minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium |
 | [2177-find-three-consecutive-integers-that-sum-to-a-given-number](https://github.com/huan186/LeetCode/tree/main/2177-find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium |
 | [2249-count-lattice-points-inside-a-circle](https://github.com/huan186/LeetCode/tree/main/2249-count-lattice-points-inside-a-circle/) | Medium |
@@ -210,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/huan186/LeetCode/tree/main/1685-sum-of-absolute-differences-in-a-sorted-array/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/huan186/LeetCode/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/huan186/LeetCode/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
 | [3862-find-the-smallest-balanced-index](https://github.com/huan186/LeetCode/tree/main/3862-find-the-smallest-balanced-index/) | Medium |
