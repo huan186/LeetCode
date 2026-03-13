@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
+| [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
@@ -50,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
+| [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
@@ -123,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
 | [1009-complement-of-base-10-integer](https://github.com/huan186/LeetCode/tree/main/1009-complement-of-base-10-integer/) | Easy |
 | [3003-maximize-the-number-of-partitions-after-operations](https://github.com/huan186/LeetCode/tree/main/3003-maximize-the-number-of-partitions-after-operations/) | Hard |
@@ -246,4 +249,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/huan186/LeetCode/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
 <!---LeetCode Topics End-->
