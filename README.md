@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [0980-unique-paths-iii](https://github.com/huan186/LeetCode/tree/main/0980-unique-paths-iii/) | Hard |
+| [1109-corporate-flight-bookings](https://github.com/huan186/LeetCode/tree/main/1109-corporate-flight-bookings/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/huan186/LeetCode/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
@@ -229,6 +230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1109-corporate-flight-bookings](https://github.com/huan186/LeetCode/tree/main/1109-corporate-flight-bookings/) | Medium |
 | [1371-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/huan186/LeetCode/tree/main/1371-find-the-longest-substring-containing-vowels-in-even-counts/) | Medium |
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/huan186/LeetCode/tree/main/1685-sum-of-absolute-differences-in-a-sorted-array/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/huan186/LeetCode/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
