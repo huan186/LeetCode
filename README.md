@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/huan186/LeetCode/tree/main/0198-house-robber/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [0442-find-all-duplicates-in-an-array](https://github.com/huan186/LeetCode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0807-max-increase-to-keep-city-skyline](https://github.com/huan186/LeetCode/tree/main/0807-max-increase-to-keep-city-skyline/) | Medium |
 | [0864-shortest-path-to-get-all-keys](https://github.com/huan186/LeetCode/tree/main/0864-shortest-path-to-get-all-keys/) | Hard |
@@ -92,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [0442-find-all-duplicates-in-an-array](https://github.com/huan186/LeetCode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/huan186/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -104,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
+| [0442-find-all-duplicates-in-an-array](https://github.com/huan186/LeetCode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0870-advantage-shuffle](https://github.com/huan186/LeetCode/tree/main/0870-advantage-shuffle/) | Medium |
 | [0922-sort-array-by-parity-ii](https://github.com/huan186/LeetCode/tree/main/0922-sort-array-by-parity-ii/) | Easy |
 | [1619-mean-of-array-after-removing-some-elements](https://github.com/huan186/LeetCode/tree/main/1619-mean-of-array-after-removing-some-elements/) | Easy |
