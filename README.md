@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/huan186/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/huan186/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/huan186/LeetCode/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3861-minimum-capacity-box](https://github.com/huan186/LeetCode/tree/main/3861-minimum-capacity-box/) | Easy |
@@ -109,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/huan186/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -242,6 +244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/huan186/LeetCode/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
