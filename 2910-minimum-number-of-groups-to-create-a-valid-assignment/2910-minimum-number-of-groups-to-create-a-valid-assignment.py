@@ -1,6 +1,3 @@
-from collections import Counter
-from typing import List
-
 class Solution:
     def minGroupsForValidAssignment(self, balls: List[int]) -> int:
         count = Counter(balls)
