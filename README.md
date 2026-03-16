@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2023-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/huan186/LeetCode/tree/main/2023-number-of-pairs-of-strings-with-concatenation-equal-to-target/) | Medium |
 | [2104-sum-of-subarray-ranges](https://github.com/huan186/LeetCode/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 | [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
+| [2202-maximize-the-topmost-element-after-k-moves](https://github.com/huan186/LeetCode/tree/main/2202-maximize-the-topmost-element-after-k-moves/) | Medium |
 | [2249-count-lattice-points-inside-a-circle](https://github.com/huan186/LeetCode/tree/main/2249-count-lattice-points-inside-a-circle/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
@@ -50,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/huan186/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1605-find-valid-matrix-given-row-and-column-sums](https://github.com/huan186/LeetCode/tree/main/1605-find-valid-matrix-given-row-and-column-sums/) | Medium |
 | [1775-equal-sum-arrays-with-minimum-number-of-operations](https://github.com/huan186/LeetCode/tree/main/1775-equal-sum-arrays-with-minimum-number-of-operations/) | Medium |
+| [2202-maximize-the-topmost-element-after-k-moves](https://github.com/huan186/LeetCode/tree/main/2202-maximize-the-topmost-element-after-k-moves/) | Medium |
 | [2910-minimum-number-of-groups-to-create-a-valid-assignment](https://github.com/huan186/LeetCode/tree/main/2910-minimum-number-of-groups-to-create-a-valid-assignment/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3282-reach-end-of-array-with-max-score](https://github.com/huan186/LeetCode/tree/main/3282-reach-end-of-array-with-max-score/) | Medium |
