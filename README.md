@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/huan186/LeetCode/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/huan186/LeetCode/tree/main/0198-house-robber/) | Medium |
+| [0209-minimum-size-subarray-sum](https://github.com/huan186/LeetCode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/huan186/LeetCode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/huan186/LeetCode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/huan186/LeetCode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/huan186/LeetCode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/huan186/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Enumeration
 | Problem Name | Difficulty |
@@ -241,6 +243,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/huan186/LeetCode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [1109-corporate-flight-bookings](https://github.com/huan186/LeetCode/tree/main/1109-corporate-flight-bookings/) | Medium |
 | [1371-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/huan186/LeetCode/tree/main/1371-find-the-longest-substring-containing-vowels-in-even-counts/) | Medium |
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/huan186/LeetCode/tree/main/1685-sum-of-absolute-differences-in-a-sorted-array/) | Medium |
@@ -260,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/huan186/LeetCode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/huan186/LeetCode/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/huan186/LeetCode/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Union-Find
