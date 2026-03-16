@@ -1,9 +1,7 @@
 class Solution:
     def maximumTop(self, nums: List[int], k: int) -> int:
         n = len(nums)
-        if n == 1:
-            if k % 2 == 0:
-                return nums[0]
+        if n == 1 and k % 2 == 1:
             return -1
         if k <= 1:
             return nums[k]
