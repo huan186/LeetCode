@@ -7,9 +7,9 @@ class Solution:
         res = len(nums)
         for right in range(len(nums)):
             total += nums[right]
-            while total - nums[left] >= target:
-                total -= nums[left]
-                left += 1
+            while total >= target:
                 res = min(res, right - left + 1)
+                total -= nums[left]
+                left += 1    
                 
         return res
