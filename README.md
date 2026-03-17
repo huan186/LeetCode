@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
+| [2735-collecting-chocolates](https://github.com/huan186/LeetCode/tree/main/2735-collecting-chocolates/) | Medium |
 | [2740-find-the-value-of-the-partition](https://github.com/huan186/LeetCode/tree/main/2740-find-the-value-of-the-partition/) | Medium |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/huan186/LeetCode/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [2910-minimum-number-of-groups-to-create-a-valid-assignment](https://github.com/huan186/LeetCode/tree/main/2910-minimum-number-of-groups-to-create-a-valid-assignment/) | Medium |
@@ -174,6 +175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1638-count-substrings-that-differ-by-one-character](https://github.com/huan186/LeetCode/tree/main/1638-count-substrings-that-differ-by-one-character/) | Medium |
 | [1849-splitting-a-string-into-descending-consecutive-values](https://github.com/huan186/LeetCode/tree/main/1849-splitting-a-string-into-descending-consecutive-values/) | Medium |
 | [2249-count-lattice-points-inside-a-circle](https://github.com/huan186/LeetCode/tree/main/2249-count-lattice-points-inside-a-circle/) | Medium |
+| [2735-collecting-chocolates](https://github.com/huan186/LeetCode/tree/main/2735-collecting-chocolates/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
