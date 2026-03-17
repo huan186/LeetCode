@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/huan186/LeetCode/tree/main/2202-maximize-the-topmost-element-after-k-moves/) | Medium |
 | [2249-count-lattice-points-inside-a-circle](https://github.com/huan186/LeetCode/tree/main/2249-count-lattice-points-inside-a-circle/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/huan186/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2475-number-of-unequal-triplets-in-array](https://github.com/huan186/LeetCode/tree/main/2475-number-of-unequal-triplets-in-array/) | Easy |
 | [2580-count-ways-to-group-overlapping-ranges](https://github.com/huan186/LeetCode/tree/main/2580-count-ways-to-group-overlapping-ranges/) | Medium |
 | [2735-collecting-chocolates](https://github.com/huan186/LeetCode/tree/main/2735-collecting-chocolates/) | Medium |
@@ -98,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2023-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/huan186/LeetCode/tree/main/2023-number-of-pairs-of-strings-with-concatenation-equal-to-target/) | Medium |
 | [2166-design-bitset](https://github.com/huan186/LeetCode/tree/main/2166-design-bitset/) | Medium |
 | [2273-find-resultant-array-after-removing-anagrams](https://github.com/huan186/LeetCode/tree/main/2273-find-resultant-array-after-removing-anagrams/) | Easy |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/huan186/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2957-remove-adjacent-almost-equal-characters](https://github.com/huan186/LeetCode/tree/main/2957-remove-adjacent-almost-equal-characters/) | Medium |
 | [3003-maximize-the-number-of-partitions-after-operations](https://github.com/huan186/LeetCode/tree/main/3003-maximize-the-number-of-partitions-after-operations/) | Hard |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/huan186/LeetCode/tree/main/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
@@ -304,4 +306,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1622-fancy-sequence](https://github.com/huan186/LeetCode/tree/main/1622-fancy-sequence/) | Hard |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2452-words-within-two-edits-of-dictionary](https://github.com/huan186/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 <!---LeetCode Topics End-->
