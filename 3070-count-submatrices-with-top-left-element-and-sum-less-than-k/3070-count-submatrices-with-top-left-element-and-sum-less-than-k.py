@@ -6,7 +6,7 @@ class Solution:
         for row in grid:
             t = [0] * (n + 1)
             for i in range(n):
-                t[i + 1] += t[i] + row[i]
+                t[i + 1] = t[i] + row[i]
             for i in range(1, n + 1):
                 s[i] += t[i]
                 if s[i] > k:
