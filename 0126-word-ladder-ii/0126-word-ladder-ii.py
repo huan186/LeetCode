@@ -4,9 +4,9 @@ class Solution:
             return sum(a != b for a, b in zip(str1, str2))
         if endWord not in wordList:
             return []
+        if hamming_distance(endWord, beginWord) <= 1:
+            return [[beginWord, endWord]]
         if beginWord in wordList:
-            if hamming_distance(endWord, beginWord) <= 1:
-                return [[beginWord, endWord]]
             wordList.remove(beginWord)
         wordList.remove(endWord)
 
