@@ -4,16 +4,14 @@ class Solution:
         n = len(grid[0])
         count = [[0, 0] for _ in range(n + 1)]
         for row in grid:
-            temp = [[0, 0] for _ in range(n + 1)]
-            for c in range(1, n +  1):
-                temp[c][0], temp[c][1] = temp[c - 1][0], temp[c - 1][1]
-                if row[c - 1] == 'X':
-                    temp[c][0] += 1
-                elif row[c - 1] == 'Y':
-                    temp[c][1] += 1
-            for c in range(1, n + 1):
-                count[c][0] += temp[c][0]
-                count[c][1] += temp[c][1]
+            cntX, cntY = 0, 0
+            for c in range(n):
+                if row[c] == 'X':
+                    cntX += 1
+                elif row[c] == 'Y':
+                    cntY += 1
+                count[c][0] += cntX
+                count[c][1] += cntY
                 if count[c][0] == count[c][1] and count[c][0] != 0:
                     res += 1
         return res
