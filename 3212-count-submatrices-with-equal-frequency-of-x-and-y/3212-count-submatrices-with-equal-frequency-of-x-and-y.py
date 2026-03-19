@@ -2,7 +2,7 @@ class Solution:
     def numberOfSubmatrices(self, grid: List[List[str]]) -> int:
         res = 0
         n = len(grid[0])
-        count = [[0, 0] for _ in range(n + 1)]
+        count = [[0, 0] for _ in range(n)]
         for row in grid:
             cntX, cntY = 0, 0
             for c in range(n):
