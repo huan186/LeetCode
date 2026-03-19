@@ -1,21 +1,13 @@
 class Solution:
     def beautifulIndices(self, s: str, a: str, b: str, k: int) -> List[int]:
-        def find_all(x, y):
-            res = []
-            i = x.find(y)
-            while i != -1:
-                res.append(i)
-                i = x.find(y, i + 1)
-            return res
-        ia = find_all(s, a)
-        ib = find_all(s, b)
-        if not ia or not ib:
-            return []
+        i, j = s.find(a), float('-inf')
         res = []
-        iib = 0
-        for i in ia:
-            while iib < len(ib) and i - ib[iib] > k:
-                iib += 1
-            if iib < len(ib) and abs(i - ib[iib]) <= k:
+        while i != -1 and j != -1:
+            if abs(i - j) <= k:
                 res.append(i)
+                i = s.find(a, i + 1)
+            elif i > j:
+                j = s.find(b, max(i - k, 0))
+            else:
+                i = s.find(a, j - k)
         return res
