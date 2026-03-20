@@ -1,25 +1,22 @@
-
 class Solution:
     def predictTheWinner(self, nums: List[int]) -> bool:
         nums = tuple(nums)
         @lru_cache(None)
-        def max_score(x):
-            l = len(x)
-            if l == 1:
-                return x[0], 0
-            if l == 2:
-                return max(x), min(x)
+        def max_score(l, r):
+            if l == r:
+                return nums[l], 0
+            if r - l == 1:
+                return max(nums[l], nums[r]), min(nums[l], nums[r])
+
             # take left
-            s2l, s1l = max_score(x[1:])
-            s1l += x[0]
+            s2l, s1l = max_score(l + 1, r)
+            s1l += nums[l]
 
             # take right
-            s2r, s1r = max_score(x[:-1])
-            s1r += x[-1]
+            s2r, s1r = max_score(l, r - 1)
+            s1r += nums[r]
+            
+            return max((s1l, s2l), (s1r, s2r))
 
-            if s1l >= s1r:
-                return s1l, s2l
-            return s1r, s2r
-
-        s1, s2 = max_score(nums)
+        s1, s2 = max_score(0, len(nums) - 1)
         return s1 >= s2
