@@ -1,6 +1,6 @@
 class Solution:
     def __init__(self):
-        self.p5 = [bin(p)[2:] for p in [1, 5, 25, 125, 625, 3125, 15625]]
+        self.p5 = [bin(5 ** i)[2:] for i in range(7)]
 
     @lru_cache(None)
     def minimumBeautifulSubstrings(self, s: str) -> int:
