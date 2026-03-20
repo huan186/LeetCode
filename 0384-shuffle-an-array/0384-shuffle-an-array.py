@@ -1,5 +1,4 @@
 class Solution:
-
     def __init__(self, nums: List[int]):
         self.original = nums
 
@@ -8,5 +7,7 @@ class Solution:
 
     def shuffle(self) -> List[int]:
         res = self.original[:]
-        random.shuffle(res)
+        for i in range(len(self.original)):
+            j = random.randint(0, len(self.original)-1)
+            res[i], res[j] = res[j], res[i]
         return res
