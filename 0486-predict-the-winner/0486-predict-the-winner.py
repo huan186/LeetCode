@@ -1,10 +1,6 @@
+
 class Solution:
     def predictTheWinner(self, nums: List[int]) -> bool:
-        n = len(nums)
-        if n <= 2:
-            return True
-        if n == 3:
-            return nums[1] <= nums[0] + nums[2]
         nums = tuple(nums)
         @lru_cache(None)
         def max_score(x):
