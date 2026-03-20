@@ -8,6 +8,6 @@ class Solution:
     def shuffle(self) -> List[int]:
         res = self.original[:]
         for i in range(len(self.original)):
-            j = random.randint(0, len(self.original) - 1)
+            j = random.randint(0, len(self.original)-1)
             res[i], res[j] = res[j], res[i]
         return res
