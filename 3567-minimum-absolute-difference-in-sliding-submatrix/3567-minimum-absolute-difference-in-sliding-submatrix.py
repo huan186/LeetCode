@@ -10,6 +10,6 @@ class Solution:
                         s.add(grid[i + di][j + dj])
                 if len(s) == 1:
                     continue
-                l = sorted(list(s))
+                l = sorted(s)
                 res[i][j] = min(a - b for a, b in zip(l[1:], l))
         return res
