@@ -10,7 +10,9 @@ class Solution:
             for j in range(1, n):
                 num = grid[i][j]
                 v = set()
-                for x in nxt_dp[-1] + dp[j]:
+                for x in nxt_dp[-1]:
+                    v.add(x * num)
+                for x in dp[j]:
                     v.add(x * num)
                 nxt = []
                 if min(v) < 0:
@@ -21,4 +23,5 @@ class Solution:
                     nxt.append(0)
                 nxt_dp.append(nxt)
             dp = nxt_dp
-        return -1 if max(dp[-1]) < 0 else max(dp[-1]) % mod
+        max_product = max(max(dp[-1]), - 1)
+        return -1 if max_product == -1 else max_product % mod
