@@ -5,7 +5,6 @@ class Solution:
         
         curr = mat
         for _ in range(4):
-            print(curr)
             if curr == target:
                 return True
             curr = rotated(curr)
