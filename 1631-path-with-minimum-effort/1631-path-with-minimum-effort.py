@@ -13,7 +13,6 @@ class Solution:
                 return e
             for di, dj in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                 ni, nj = i + di, j + dj
-
                 if 0 <= ni < m and 0 <= nj < n:
                     ne = max(e, abs(heights[i][j] - heights[ni][nj]))
                     if ne < me[ni][nj]:
