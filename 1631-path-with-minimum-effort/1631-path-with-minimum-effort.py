@@ -7,6 +7,8 @@ class Solution:
         heap = [(0, 0, 0)]
         while heap:
             e, i, j = heapq.heappop(heap)
+            if e > me[i][j]:
+                continue
             if i == m - 1 and j == n - 1:
                 return e
             for di, dj in ((1, 0), (-1, 0), (0, 1), (0, -1)):
