@@ -1,14 +1,14 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        q = deque()
-        eliminated = set()
+        stack = []
+        removed = set()
         for i, c in enumerate(s):
             if c == '(':
-                q.append(i)
+                stack.append(i)
             elif c == ')':
-                if not q:
-                    eliminated.add(i)
+                if stack:
+                    stack.pop()
                 else:
-                    q.popleft()
-        eliminated.update(q)
-        return ''.join(c for i, c in enumerate(s) if i not in eliminated)
+                    removed.add(i)
+        removed.update(stack)
+        return ''.join(c for i, c in enumerate(s) if i not in removed)
