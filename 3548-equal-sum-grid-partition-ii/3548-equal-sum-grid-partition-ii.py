@@ -3,9 +3,8 @@ class Solution:
         rows = defaultdict(list)
         cols = defaultdict(list)
         s = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                num = grid[i][j]
+        for i, row in enumerate(grid):
+            for j, num in enumerate(row):
                 rows[num].append((i, j))
                 cols[num].append((j, i))
                 s += num
@@ -13,7 +12,7 @@ class Solution:
         def helper(x, dct):
             m, n = len(x), len(x[0])
             s1 = 0
-            for i in range(m - 1):
+            for i, row in enumerate(x[:-1]):
                 s1 += sum(x[i])
                 diff = 2 * s1 - s
                 if diff == 0:
