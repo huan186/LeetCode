@@ -7,15 +7,13 @@
 class Solution:
     def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
         def dfs(node, depth):
+            if not node:
+                return depth - 1, node
             if not node.left and not node.right:
-                return node, depth
-            if not node.left:
-                return dfs(node.right, depth + 1)
-            if not node.right:
-                return dfs(node.left, depth + 1)
-            ln, ld = dfs(node.left, depth + 1)
-            rn, rd = dfs(node.right, depth + 1)
-            if ld >= rd:
-                return ln, ld
-            return rn, rd
-        return dfs(root, 0)[0].val
+                return depth, node
+            left = dfs(node.left, depth + 1)
+            right = dfs(node.right, depth + 1)
+            if left[0] >= right[0]:
+                return left
+            return right
+        return dfs(root, 0)[1].val
