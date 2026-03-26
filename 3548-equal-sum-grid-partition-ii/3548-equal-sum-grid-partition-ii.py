@@ -4,7 +4,10 @@ class Solution:
         s = 0
         for i, row in enumerate(grid):
             for j, num in enumerate(row):
-                pos[num].append((i, j))
+                if len(pos[num]) < 2:
+                    pos[num].append((i, j))
+                else:
+                    pos[num][-1] = (i, j)
                 s += num
 
         def helper(x, p):
@@ -28,8 +31,8 @@ class Solution:
                         if l and l[0][p] <= i and (l[0][1 - p] == 0 or l[0][1 - p] == n - 1 or i > 0):
                             return True
                     else:
-                        l = pos[-diff]
-                        if l and l[-1][p] > i and (l[-1][1 - p] == 0 or l[-1][1 - p] == n - 1 or i < m - 2):
+                        l2 = pos[-diff]
+                        if l2 and l2[-1][p] > i and (l2[-1][1 - p] == 0 or l2[-1][1 - p] == n - 1 or i < m - 2):
                             return True
             return False
 
