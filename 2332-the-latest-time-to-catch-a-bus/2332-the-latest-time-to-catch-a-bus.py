@@ -4,7 +4,7 @@ class Solution:
         heapq.heapify(passengers)
         prev = 0
         res = 0
-        while buses and passengers:
+        while buses:
             b = heapq.heappop(buses)
             c = 0
             while passengers and c < capacity and passengers[0] <= b:
