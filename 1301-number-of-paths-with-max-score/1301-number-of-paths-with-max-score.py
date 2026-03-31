@@ -1,7 +1,8 @@
 class Solution:
     def pathsWithMaxScore(self, board: List[str]) -> List[int]:
+        mod = 10 ** 9 + 7
         n = len(board)
-        dp = [[0, 0] for _ in range(n)] # [max_sum, ways]
+        dp = [[0, 0] for _ in range(n)]  # [max_sum, ways]
         dp[0] = [0, 1]
         board[0] = '0' + board[0][1:]
         board[-1] = board[-1][:-1] + '0'
@@ -21,7 +22,7 @@ class Solution:
                             continue
                         ns = s + int(board[i][j])
                         if ns == nxt[j][0]:
-                            nxt[j][1] += w
+                            nxt[j][1] = (nxt[j][1] + w) % mod
                         elif ns > nxt[j][0]:
                             nxt[j][0] = ns
                             nxt[j][1] = w
