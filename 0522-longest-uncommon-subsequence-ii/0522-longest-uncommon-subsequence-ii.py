@@ -4,7 +4,7 @@ class Solution:
             a, b = len(x), len(y)
             if a > b:
                 return False
-            i1, i2= 0, 0
+            i1, i2 = 0, 0
             while i1 < a and i2 < b:
                 if x[i1] == y[i2]:
                     i1 += 1
