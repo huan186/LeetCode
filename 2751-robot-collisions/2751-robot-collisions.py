@@ -1,23 +1,25 @@
 class Solution:
-    def survivedRobotsHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
-        left, right = [], deque()
-        x = []
-        for i in range(len(positions)):
-            x.append((positions[i], i, healths[i], directions[i]))
-        x.sort()
-        for _, i, health, direction in x:
-            if direction == 'L':
-                while right and health > 0:
-                    ri, rh = right.pop()
-                    if rh > health:
-                        right.append((ri, rh - 1))
-                        health = 0
-                    elif rh == health:
-                        health = 0
-                    else:
-                        health -= 1
-                if health > 0:
-                    left.append((i, health))
+    def survivedRobotsHealths(self, positions, healths, directions):
+        robots = sorted(range(len(positions)), key=lambda i: positions[i])
+        stack = []
+
+        for i in robots:
+            if directions[i] == "R":
+                stack.append(i)
             else:
-                right.append((i, health))
-        return [h for i, h in sorted(left + list(right))]
+                while stack and healths[i] > 0:
+                    j = stack[-1]
+
+                    if healths[j] < healths[i]:
+                        stack.pop()
+                        healths[i] -= 1
+                        healths[j] = 0
+                    elif healths[j] > healths[i]:
+                        healths[j] -= 1
+                        healths[i] = 0
+                    else:
+                        stack.pop()
+                        healths[i] = 0
+                        healths[j] = 0
+
+        return [h for h in healths if h > 0]
