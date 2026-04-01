@@ -15,8 +15,10 @@ class Solution:
 
         ans = min(n - left - 1, right)
 
+        j = right
         for i in range(left + 1):
-            j = bisect.bisect_left(arr, arr[i], lo=right)
+            while j < n and arr[j] < arr[i]:
+                j += 1
             ans = min(ans, j - i - 1)
 
         return ans
