@@ -6,19 +6,14 @@ class Solution:
         if (maxChoosableInteger * (maxChoosableInteger + 1)) // 2 < desiredTotal:
             return False
 
-        memo = {}
-
-        def win(used, total):
-            if (used, total) in memo:
-                return memo[(used, total)]
+        @lru_cache(None)
+        def win(state):
             for num in range(maxChoosableInteger, 0, -1):
-                mask = 1 << (num - 1)
-                if used & mask:
+                mask = 1 << (num + 8)
+                if state & mask:
                     continue
-                if num >= total or not win(used | mask, total - num):
-                    memo[(used, total)] = True
+                if num >= (state & 511) or not win((state - num) | mask):
                     return True
-            memo[(used, total)] = False
             return False
         
-        return win(0, desiredTotal)
+        return win(desiredTotal)
