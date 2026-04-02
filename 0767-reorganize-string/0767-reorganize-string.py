@@ -5,7 +5,7 @@ class Solution:
             return ''
         res = [''] * n
         i = 0
-        for c, f in counts.items():
+        for c, f in sorted(counts.items(), key=lambda x: x[1], reverse=True):
             while f > 0:
                 res[i] = c
                 f -= 1
