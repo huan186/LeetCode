@@ -4,8 +4,6 @@ class Solution:
         for i in range(n - 1):
             if i + k < n:
                 nums[i + k] += nums[i]
-                if i > 0 and nums[i] < nums[i - 1]:
-                    return False
-            elif nums[i] != nums[i + 1]:
-                return False
+                if i > 0 and nums[i] < nums[i - 1]: return False
+            elif nums[i] != nums[i + 1]: return False
         return True
