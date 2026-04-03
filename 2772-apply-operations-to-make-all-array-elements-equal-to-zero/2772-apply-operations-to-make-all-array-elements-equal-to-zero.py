@@ -6,4 +6,4 @@ class Solution:
                 nums[i + k] += nums[i]
             if i > 0 and nums[i] < nums[i - 1]:
                 return False
-        return len(set(nums[-1:-k - 1:-1])) == 1
+        return len(set(nums[n - k:])) == 1
