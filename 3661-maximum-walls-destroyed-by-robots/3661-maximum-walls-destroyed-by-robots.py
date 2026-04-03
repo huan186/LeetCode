@@ -10,7 +10,6 @@ class Solution:
             ml = bisect.bisect_right(walls, robot)
             mr = bisect.bisect_left(walls, robot)
             r = bisect.bisect_right(walls, min(next_robot - 1, robot + dist))
-            left = max(left + ml - l, right + max(l - 1, ri))
-            right = max(left, right) + r - mr
+            left, right = max(left + ml - l, right + ml - max(l, ri)), max(left, right) + r - mr
             ri = r
         return max(left, right)
