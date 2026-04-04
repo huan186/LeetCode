@@ -3,17 +3,21 @@ class Solution {
         int i = 0;
         int n = encodedText.length();
         int cols = n / rows;
-        StringBuilder sb = new StringBuilder();
+        ArrayDeque<Character> dq = new ArrayDeque();
         while (i < cols) {
             int j = i;
             while (j < n) {
-                sb.append(encodedText.charAt(j));
+                dq.push(encodedText.charAt(j));
                 j += cols + 1;
             }
             i++;
         }
-        while (sb.length() > 0 && sb.charAt(sb.length() - 1) == ' ') {
-            sb.deleteCharAt(sb.length() - 1);
+        while (!dq.isEmpty() && dq.peek() == ' ') {
+            dq.pop();
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!dq.isEmpty()) {
+            sb.append(dq.pollLast());
         }
         return sb.toString();
     }
