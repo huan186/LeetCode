@@ -1,24 +1,23 @@
 class Solution {
     public String decodeCiphertext(String encodedText, int rows) {
-        int i = 0;
         int n = encodedText.length();
         int cols = n / rows;
-        ArrayDeque<Character> dq = new ArrayDeque();
-        while (i < cols) {
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < cols; i++) {
             int j = i;
             while (j < n) {
-                dq.push(encodedText.charAt(j));
+                sb.append(encodedText.charAt(j));
                 j += cols + 1;
             }
-            i++;
         }
-        while (!dq.isEmpty() && dq.peek() == ' ') {
-            dq.pop();
+
+        int end = sb.length() - 1;
+        while (end >= 0 && sb.charAt(end) == ' ') {
+            end--;
         }
-        StringBuilder sb = new StringBuilder();
-        while (!dq.isEmpty()) {
-            sb.append(dq.pollLast());
-        }
-        return sb.toString();
+
+        return sb.substring(0, end + 1);
     }
 }
