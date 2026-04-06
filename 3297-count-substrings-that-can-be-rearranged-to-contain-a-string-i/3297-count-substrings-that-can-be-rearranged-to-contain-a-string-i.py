@@ -1,24 +1,18 @@
 class Solution:
     def validSubstringCount(self, word1: str, word2: str) -> int:
-        freq2 = Counter(word2)
-        cnt = defaultdict(int)
-        left = 0
-        def ok():
-            for ch2, c in freq2.items():
-                if c > cnt[ch2]:
-                    return False
-            return True
-        res = 0
-        for ch in word1:
-            cnt[ch] += 1
-            while ok():
-                cnt[word1[left]] -= 1
-                left += 1
-                if not ok():
-                    left -= 1
-                    cnt[word1[left]] += 1
-                    break
-            else:
+        if len(word1) < len(word2):
+            return 0
+        f = Counter(word2)
+        res = left = 0
+        k = len(f)
+        for c1 in word1:
+            f[c1] -= 1
+            if f[c1] == 0:
+                k -= 1
+            if k > 0:
                 continue
+            while left < len(word1) and f[word1[left]] < 0:
+                f[word1[left]] += 1
+                left += 1
             res += left + 1
         return res
