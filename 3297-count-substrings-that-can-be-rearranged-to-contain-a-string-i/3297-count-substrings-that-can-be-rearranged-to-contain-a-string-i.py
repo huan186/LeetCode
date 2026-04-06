@@ -18,6 +18,7 @@ class Solution:
                     left -= 1
                     cnt[word1[left]] += 1
                     break
-            if ok():
-                res += left + 1
+            else:
+                continue
+            res += left + 1
         return res
