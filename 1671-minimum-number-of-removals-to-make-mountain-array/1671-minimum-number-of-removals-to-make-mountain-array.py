@@ -19,8 +19,8 @@ class Solution:
             return max_len + 1
         res = n - 2
         for i in range(1, n - 1):
-            i, d = inc(i), dec(i)
-            if i == 1 or d == 1:
+            a, b = inc(i), dec(i)
+            if a == 1 or b == 1:
                 continue
-            res = min(res, n - i - d + 1)
+            res = min(res, n - a - b + 1)
         return res
