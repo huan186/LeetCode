@@ -12,7 +12,7 @@ class Solution:
                 if end > start and num[start] == '0':
                     break
                 cur = int(num[start:end + 1])
-                if end == 0:
+                if start == 0:
                     dfs(end + 1, str(cur), cur, cur)
                 else:
                     dfs(end + 1, expression + "+" + str(cur), value + cur, cur)
