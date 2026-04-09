@@ -4,6 +4,4 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         k %= len(nums)
-        temp = nums[-k:] + nums[:-k]
-        for i in range(len(nums)):
-            nums[i] = temp[i]
+        nums[:] = nums[-k:] + nums[:-k]
