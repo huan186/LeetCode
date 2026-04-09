@@ -14,8 +14,9 @@ class Solution:
             else:
                 kdict[k].append((l, r, v))
 
+        diff = [1] * (threshold + n)
         for k, x in kdict.items():
-            diff = [1] * (threshold + n)
+            diff[:] = [1] * len(diff)
             for l, r, v in x:
                 R = ((r - l) // k + 1) * k + l
                 diff[l] = diff[l] * v % mod
