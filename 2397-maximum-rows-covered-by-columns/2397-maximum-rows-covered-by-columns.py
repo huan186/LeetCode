@@ -1,8 +1,10 @@
 class Solution:
     def maximumRows(self, matrix: List[List[int]], numSelect: int) -> int:
         nums = [int("".join(map(str, row)), 2) for row in matrix]
-        res = 0
-        for comb in combinations(range(len(matrix[0])), numSelect):
-            mask = sum(1 << c for c in comb)
-            res = max(res, sum(num == num & mask for num in nums))
-        return res
+
+        for k in range(len(nums), -1, -1):
+            for c in combinations(nums, k):
+                if reduce(or_, c, 0).bit_count() <= numSelect:
+                    return k
+
+        return 0
