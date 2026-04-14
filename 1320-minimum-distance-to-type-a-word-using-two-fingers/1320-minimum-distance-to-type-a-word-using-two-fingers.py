@@ -1,12 +1,10 @@
-
+def get_distance(a, b):
+    r1, c1 = divmod(ord(a) - ord('A'), 6)
+    r2, c2 = divmod(ord(b) - ord('A'), 6)
+    return abs(r1 - r2) + abs(c1 - c2)
 
 class Solution:
     def minimumDistance(self, word: str) -> int:
-        def get_distance(a, b):
-            r1, c1 = divmod(ord(a) - ord('A'), 6)
-            r2, c2 = divmod(ord(b) - ord('A'), 6)
-            return abs(r1 - r2) + abs(c1 - c2)
-
         previous = word[0]
         cost = [0] * 26
         for letter in word:
