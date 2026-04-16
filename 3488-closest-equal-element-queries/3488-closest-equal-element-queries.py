@@ -1,18 +1,23 @@
 class Solution:
-    def solveQueries(self, nums: List[int], queries: List[int]) -> List[int]:
-        indices = defaultdict(list)
-        for i, num in enumerate(nums):
-            indices[num].append(i)
+    def solveQueries(self, nums: List[int], queries: List[int]) -> List[int]:        
         n = len(nums)
-        def min_dist(a, b):
-            return min(a - b, n - a + b) if a >= b else min(b - a, n + a - b)
-        res = [-1] * len(queries)
-        for i, q in enumerate(queries):
-            num = nums[q]
-            idx = indices[num]
+        pos = defaultdict(list)
+
+        for i, v in enumerate(nums):
+            pos[v].append(i)
+
+        ans = [-1] * n
+
+        for v, idx in pos.items():
             m = len(idx)
-            if m <= 1:
+            if m == 1:
                 continue
-            k = bisect.bisect_left(idx, q)
-            res[i] = min(min_dist(q, idx[k - 1]), min_dist(q, idx[(k + 1) % m]))
-        return res
+            for i in range(m):
+                left = idx[i - 1]
+                right = idx[(i + 1) % m]
+                cur = idx[i]
+                d1 = abs(cur - left)
+                d2 = abs(cur - right)
+                ans[cur] = min(min(d1, n - d1), min(d2, n - d2))
+
+        return [ans[q] for q in queries]
