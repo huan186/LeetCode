@@ -2,25 +2,14 @@ class Solution:
     def findRadius(self, houses: List[int], heaters: List[int]) -> int:
         houses.sort()
         heaters.sort()
-        m, n = len(houses), len(heaters)
 
-        def possible(r):
-            i, j, = 0, 0
-            while i < m and j < n:
-                if abs(houses[i] - heaters[j]) <= r:
-                    i += 1
-                else:
-                    j += 1
-            return i == m
+        j = 0
+        ans = 0
+        n = len(heaters)
 
-        
-        left, right = 0, 10 ** 9
+        for h in houses:
+            while j + 1 < n and abs(heaters[j + 1] - h) <= abs(heaters[j] - h):
+                j += 1
 
-        while left < right:
-            mid = (left + right) // 2
-            if possible(mid):
-                right = mid
-            else:
-                left = mid + 1
-        
-        return left
+            ans = max(ans, abs(heaters[j] - h))
+        return ans
