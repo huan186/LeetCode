@@ -2,8 +2,8 @@ class Solution:
     def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
         mod = 10 ** 9 + 7
         n = len(arr)
-        best = suff = 0
-        tot = 0
+        tot = best = suff = 0
+
         for num in arr:
             suff += num
             tot += num
