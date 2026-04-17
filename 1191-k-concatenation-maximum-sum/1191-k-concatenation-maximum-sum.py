@@ -2,26 +2,20 @@ class Solution:
     def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:
         mod = 10 ** 9 + 7
         n = len(arr)
-        x = []
-        s = 0
+        best = suff = 0
         tot = 0
         for num in arr:
-            s += num
+            suff += num
             tot += num
-            if s < 0:
-                s = 0
-            x.append(s)
+            suff = max(suff, 0)
+            best = max(best, suff)
 
         if k == 1:
-            return max(x) % mod
+            return best % mod
         
-        s = 0
+        pref = 0
         for num in arr[::-1]:
-            s += num
-            if s < 0:
-                s = 0
+            pref += num
+            pref = max(pref, 0)
 
-        return max(max(x), x[-1] + s + max(0, (k - 2) * tot)) % mod
-
-
-            
+        return max(best, pref + suff + max(0, (k - 2) * tot)) % mod
