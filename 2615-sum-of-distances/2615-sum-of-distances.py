@@ -5,11 +5,11 @@ class Solution:
             indices[num].append(i)
         n = len(nums)
         res = [0] * n
-        for num, idx in indices.items():
+        for idx in indices.values():
             m = len(idx)
             d = sum(idx) - idx[0] * m
-            for i in range(m - 1):
+            res[idx[0]] = d
+            for i in range(1, m):
+                d += (2 * i - m) * (idx[i] - idx[i - 1])
                 res[idx[i]] = d
-                d += (2 * i + 2 - m) * (idx[i + 1] - idx[i])
-            res[idx[-1]] = d
         return res
