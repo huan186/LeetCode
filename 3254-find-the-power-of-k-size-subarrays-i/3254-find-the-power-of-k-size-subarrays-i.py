@@ -1,11 +1,21 @@
 class Solution:
     def resultsArray(self, nums: List[int], k: int) -> List[int]:
-        def power(start):
-            for i in range(start + 1, start + k):
-                if nums[i] - nums[i - 1] != 1:
-                    return -1
-            return nums[start + k - 1]
-        return [power(i) for i in range(0, len(nums) - k + 1)]
+        c = 1
+        for i in range(k - 3, -1, -1):
+            if nums[i + 1] - nums[i] == 1:
+                c += 1
+            else:
+                break
+        n = len(nums)
+        res = [-1] * (n - k + 1)
+        for i in range(len(res)):
+            if nums[i + k - 1] == nums[i + k - 2] + 1:
+                c += 1
+            else:
+                c = 1
+            if c >= k:
+                res[i] = nums[i + k - 1]
+        return res
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
