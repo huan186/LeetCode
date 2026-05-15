@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/description/">2335. Minimum Amount of Time to Fill Cups</a></h2><h3>Easy</h3><hr><p>You have a water dispenser that can dispense cold, warm, and hot water. Every second, you can either fill up <code>2</code> cups with <strong>different</strong> types of water, or <code>1</code> cup of any type of water.</p>
+<h2><a href="https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups">2335. Minimum Amount of Time to Fill Cups</a></h2><h3>Easy</h3><hr><p>You have a water dispenser that can dispense cold, warm, and hot water. Every second, you can either fill up <code>2</code> cups with <strong>different</strong> types of water, or <code>1</code> cup of any type of water.</p>
 
 <p>You are given a <strong>0-indexed</strong> integer array <code>amount</code> of length <code>3</code> where <code>amount[0]</code>, <code>amount[1]</code>, and <code>amount[2]</code> denote the number of cold, warm, and hot water cups you need to fill respectively. Return <em>the <strong>minimum</strong> number of seconds needed to fill up all the cups</em>.</p>
 
