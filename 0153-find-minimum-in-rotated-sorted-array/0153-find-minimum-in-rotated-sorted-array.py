@@ -1,13 +1,16 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        n = len(nums)
-        if n == 0:
-            return inf
-        if n == 1 or nums[0] < nums[-1]:
-            return nums[0]
-        mid = n // 2
-        return min(self.findMin(nums[:mid]), self.findMin(nums[mid:]))
+        def helper(left, right):
+            if nums[left] <= nums[right]:
+                return nums[left]
 
+            mid = (left + right) // 2
+
+            if nums[mid] > nums[right]:
+                return helper(mid + 1, right)
+            return helper(left, mid)
+
+        return helper(0, len(nums) - 1)
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
