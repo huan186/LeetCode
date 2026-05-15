@@ -1,10 +1,6 @@
 class Solution:
     def fillCups(self, amount: List[int]) -> int:
-        amount.sort()
-        s = sum(amount)
-        if 2 * amount[-1] >= s:
-            return amount[-1]
-        return (s + 1) // 2
+        return max(max(amount), (sum(amount) + 1) // 2)
         
 
 
