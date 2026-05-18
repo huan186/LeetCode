@@ -12,7 +12,7 @@ class Solution:
         while q:
             steps, i = q.popleft()
             v = arr[i]
-            for j in set(idx[v] + [i - 1, i + 1]):
+            for j in idx[v] + [i - 1, i + 1]:
                 if 0 < j < n and j != i and not visited[j]:
                     if j == n - 1:
                         return steps + 1
