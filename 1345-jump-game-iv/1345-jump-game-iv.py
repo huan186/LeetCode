@@ -18,7 +18,7 @@ class Solution:
                         return steps + 1
                     q.append((steps + 1, j))
                     visited[j] = True
-            idx[v] = []
+            idx[v].clear()
         return -1
 
 # Synced seamlessly with LeetHub Pro
