@@ -3,22 +3,25 @@ class Solution:
         n = len(arr)
         if n < 2:
             return 0
-        idx = defaultdict(list)
+        graph = defaultdict(list)
         for i, v in enumerate(arr):
-            idx[v].append(i)
-        q = deque([(0, 0)])
+            graph[v].append(i)
+        q = deque([0])
         visited = [False] * n
         visited[0] = True
+        steps = 0
         while q:
-            steps, i = q.popleft()
-            v = arr[i]
-            for j in idx[v] + [i - 1, i + 1]:
-                if 0 < j < n and j != i and not visited[j]:
-                    if j == n - 1:
-                        return steps + 1
-                    q.append((steps + 1, j))
-                    visited[j] = True
-            idx[v].clear()
+            for _ in range(len(q)):
+                i = q.popleft()
+                v = arr[i]
+                for j in graph[v] + [i - 1, i + 1]:
+                    if 0 < j < n and j != i and not visited[j]:
+                        if j == n - 1:
+                            return steps + 1
+                        q.append(j)
+                        visited[j] = True
+                graph[v].clear()
+            steps += 1
         return -1
 
 # Synced seamlessly with LeetHub Pro
