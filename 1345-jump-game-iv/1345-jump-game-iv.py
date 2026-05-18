@@ -15,7 +15,7 @@ class Solution:
                 i = q.popleft()
                 v = arr[i]
                 for j in graph[v] + [i - 1, i + 1]:
-                    if 0 < j < n and j != i and not visited[j]:
+                    if 0 < j < n and not visited[j]:
                         if j == n - 1:
                             return steps + 1
                         q.append(j)
