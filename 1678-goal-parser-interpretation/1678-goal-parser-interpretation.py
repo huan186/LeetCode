@@ -1,6 +1,6 @@
 class Solution:
     def interpret(self, command: str) -> str:
-        return command.replace('()', 'o').replace('(', '').replace(')', '')
+        return command.replace('()', 'o').replace('(al)', 'al')
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
