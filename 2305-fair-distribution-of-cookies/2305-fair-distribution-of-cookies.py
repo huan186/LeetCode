@@ -1,8 +1,9 @@
 class Solution:
     def distributeCookies(self, cookies: List[int], k: int) -> int:
         self.ans = sum(cookies)
+        counts = [0] * k
         n = len(cookies)
-        def dfs(i, counts):
+        def dfs(i):
             if i == n:
                 self.ans = max(counts)
                 return
@@ -10,9 +11,9 @@ class Solution:
                 if counts[j] + cookies[i] > self.ans:
                     continue
                 counts[j] += cookies[i]
-                dfs(i + 1, counts)
+                dfs(i + 1)
                 counts[j] -= cookies[i]
-        dfs(0, [0] * k)
+        dfs(0)
         return self.ans
 
 # Synced seamlessly with LeetHub Pro
