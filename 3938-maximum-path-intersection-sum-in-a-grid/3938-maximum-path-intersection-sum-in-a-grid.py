@@ -13,7 +13,7 @@ class Solution:
                     curr = max(curr + row[i], row[i - 1] + row[i])
                     res = max(res, curr)
         max_score(grid)
-        max_score(list(zip(*grid)))
+        max_score(zip(*grid))
         return res
 
 # Synced seamlessly with LeetHub Pro
