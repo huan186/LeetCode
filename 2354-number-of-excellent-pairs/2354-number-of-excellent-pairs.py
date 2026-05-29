@@ -1,24 +1,15 @@
 class Solution:
     def countExcellentPairs(self, nums: List[int], k: int) -> int:
-        n = len(nums)
-        m = 32
-        f = [0] * m
-        seen = set()
-        for num in nums:
-            if num in seen:
-                continue
-            seen.add(num)
-            f[num.bit_count()] += 1
-        for i in range(1, m):
-            f[i] += f[i - 1]
+        arr = sorted(num.bit_count() for num in set(nums))
         res = 0
-        for i in range(1, m):
-            c = f[i] - f[i - 1]
-            if c > 0:
-                need = max(1, k - i)
-                if need < m:
-                    res += c * (f[m - 1] - f[need - 1])
+        n = len(arr)
+        j = n - 1
+        for i in range(n):
+            while j >= 0 and arr[i] + arr[j] >= k:
+                j -= 1
+            res += n - j - 1
         return res
+
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
