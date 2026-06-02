@@ -5,21 +5,24 @@ class Solution:
             for c in s:
                 freq[ord(c) - ord('a')] += 1
             for i in range(26):
-                if freq[i] != 0:
+                if freq[i]:
                     return freq[i]
             return 0
-        m = len(queries)
-        n = max(len(w) for w in words) + 1
-        pref = [0] * n
+
+        max_len = max(
+            max(len(w) for w in words),
+            max(len(q) for q in queries)
+        )
+
+        post = [0] * (max_len + 2)
+
         for word in words:
-            pref[f(word)] += 1
-        for i in range(1, n):
-            pref[i] += pref[i - 1]
-        res = [0] * m
-        for i in range(m):
-            fq = f(queries[i])
-            res[i] = pref[n - 1] - pref[fq]
-        return res
+            post[f(word)] += 1
+
+        for i in range(max_len, -1, -1):
+            post[i] += post[i + 1]
+
+        return [post[f(q) + 1] for q in queries]
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
