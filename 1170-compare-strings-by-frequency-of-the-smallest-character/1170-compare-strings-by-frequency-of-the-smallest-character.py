@@ -3,14 +3,12 @@ class Solution:
         def f(s):
             return s.count(min(s))
 
-        max_len = max(max(len(w) for w in words), max(len(q) for q in queries))
+        post = [0] * 12
 
-        post = [0] * (max_len + 2)
+        for w in words:
+            post[f(w)] += 1
 
-        for word in words:
-            post[f(word)] += 1
-
-        for i in range(max_len, -1, -1):
+        for i in range(10, -1, -1):
             post[i] += post[i + 1]
 
         return [post[f(q) + 1] for q in queries]
