@@ -3,10 +3,7 @@ class Solution:
         def f(s):
             return s.count(min(s))
 
-        max_len = max(
-            max(len(w) for w in words),
-            max(len(q) for q in queries)
-        )
+        max_len = max(max(len(w) for w in words), max(len(q) for q in queries))
 
         post = [0] * (max_len + 2)
 
