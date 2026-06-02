@@ -1,13 +1,7 @@
 class Solution:
     def numSmallerByFrequency(self, queries: List[str], words: List[str]) -> List[int]:
         def f(s):
-            freq = [0] * 26
-            for c in s:
-                freq[ord(c) - ord('a')] += 1
-            for i in range(26):
-                if freq[i]:
-                    return freq[i]
-            return 0
+            return s.count(min(s))
 
         max_len = max(
             max(len(w) for w in words),
