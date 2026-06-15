@@ -6,14 +6,20 @@
 #         self.right = right
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
-        if not inorder:
-            return None
-        rootVal = postorder[-1]
-        rootIdx = inorder.index(rootVal)
-        root = TreeNode(rootVal)
-        root.left = self.buildTree(inorder[:rootIdx], postorder[:rootIdx])
-        root.right = self.buildTree(inorder[rootIdx + 1:], postorder[rootIdx:-1])
-        return root
+        inorder_indices = {v: i for i, v in enumerate(inorder)}
+
+        def build_tree(l1, r1, l2, r2):
+            if l1 > r1:
+                return None
+            val = postorder[r2]
+            idx = inorder_indices[val]
+            left_size = idx - l1
+            node = TreeNode(val)
+            node.left = build_tree(l1, idx - 1, l2, l2 + left_size - 1)
+            node.right = build_tree(idx + 1, r1, l2 + left_size, r2 - 1)
+            return node
+
+        return build_tree(0, len(inorder) - 1, 0, len(postorder) - 1)
 
 
 # Synced seamlessly with LeetHub Pro
