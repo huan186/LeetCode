@@ -1,17 +1,9 @@
 class Solution:
     def sumAndMultiply(self, n: int) -> int:
-        if not n:
+        x = str(n).replace("0", "")
+        if not x:
             return 0
-        s = 0
-        x = ""
-        while n:
-            d = n % 10
-            n //= 10
-            if not d:
-                continue
-            x = str(d) + x
-            s += d
-        return int(x) * s
+        return int(x) * sum(map(int, x))
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
