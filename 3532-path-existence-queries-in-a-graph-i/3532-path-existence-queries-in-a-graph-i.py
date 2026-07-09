@@ -1,9 +1,8 @@
 class Solution:
     def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[bool]:
-        a = sorted((v, i) for i, v in enumerate(nums))
         groups = [0] * n
         for i in range(1, n):
-            groups[i] = groups[i - 1] + (a[i][0] - a[i - 1][0] > maxDiff)
+            groups[i] = groups[i - 1] + (nums[i] - nums[i - 1] > maxDiff)
         return [groups[l] == groups[r] for l, r in queries]
 
 # Synced seamlessly with LeetHub Pro
