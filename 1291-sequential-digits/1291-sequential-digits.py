@@ -1,13 +1,16 @@
 class Solution:
     def sequentialDigits(self, low: int, high: int) -> List[int]:
-        lst = []
-        for l in range(2, 10):
+        res = []
+        for l in range(max(2, len(str(low))), 10):
             for f in range(1, 11 - l):
                 num = 0
                 for d in range(f, f + l):
                     num = 10 * num + d
-                lst.append(num)
-        return [num for num in lst if low <= num <= high]
+                if num > high:
+                    break
+                if low <= num:
+                    res.append(num)
+        return res
 
 
 # Synced seamlessly with LeetHub Pro
