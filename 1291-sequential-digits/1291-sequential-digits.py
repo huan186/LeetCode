@@ -1,14 +1,11 @@
 class Solution:
     def sequentialDigits(self, low: int, high: int) -> List[int]:
+        s = '123456789'
         res = []
-        for l in range(max(2, len(str(low))), 10):
-            for f in range(1, 11 - l):
-                num = 0
-                for d in range(f, f + l):
-                    num = 10 * num + d
-                if num > high:
-                    break
-                if low <= num:
+        for l in range(len(str(low)), len(str(high)) + 1):
+            for i in range(10 - l):
+                num = int(s[i : i + l])
+                if low <= num <= high:
                     res.append(num)
         return res
 
