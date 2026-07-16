@@ -5,9 +5,13 @@ class Solution:
         mx = 0
         for i in range(n):
             mx = max(mx, nums[i])
-            prefixGcd[i] = gcd(nums[i], mx)
+            prefixGcd[i] = gcd(mx, nums[i])
         prefixGcd.sort()
-        res = 0
-        for i in range(n // 2):
-            res += gcd(prefixGcd[i], prefixGcd[n - i - 1])
-        return res
+        return sum(
+            gcd(prefixGcd[i], prefixGcd[-i - 1])
+            for i in range(n // 2)
+        )
+
+# Synced seamlessly with LeetHub Pro
+# Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+# Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
