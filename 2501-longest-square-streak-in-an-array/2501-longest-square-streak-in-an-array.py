@@ -1,6 +1,6 @@
 class Solution:
     def longestSquareStreak(self, nums: List[int]) -> int:
-        LIMIT = 10 ** 5
+        LIMIT = max(nums)
         seen = defaultdict(int)
         res = 0
         for num in sorted(set(nums)):
