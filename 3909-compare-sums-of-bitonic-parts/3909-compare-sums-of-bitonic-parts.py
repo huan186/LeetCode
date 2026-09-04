@@ -2,7 +2,7 @@ class Solution:
     def compareBitonicSums(self, nums: list[int]) -> int:
         asc = 0
         i, n = 0, len(nums)
-        while i < n and nums[i] < nums[i + 1]:
+        while i < n - 1 and nums[i] < nums[i + 1]:
             asc += nums[i]
             i += 1
         diff = 2 * asc + nums[i] - sum(nums)
