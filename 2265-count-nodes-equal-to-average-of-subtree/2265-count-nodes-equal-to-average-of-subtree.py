@@ -8,13 +8,13 @@ class Solution:
     def averageOfSubtree(self, root: TreeNode) -> int:
         def dfs(node):
             if not node:
-                return 0, 0, 0 # cnt, sum, valid
+                return 0, 0, 0
             lc, ls, lv = dfs(node.left)
             rc, rs, rv = dfs(node.right)
             cc = lc + rc + 1
             cs = ls + rs + node.val
             cv = lv + rv + (cs // cc == node.val)
-            return cc, cs, cv
+            return cc, cs, cv # cnt, sum, valid
         
         return dfs(root)[2]
 
