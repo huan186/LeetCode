@@ -1,20 +1,12 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        mapping = {
-            '(': ')',
-            '{': '}',
-            '[': ']',
-        }
-
+        mp = {'(': ')', '{': '}','[': ']',}
         st = []
-
         for c in s:
             if c in '({[':
-                st.append(mapping[c])
-            else:
-                if not st or st.pop() != c:
-                    return False
-
+                st.append(mp[c])
+            elif not st or st.pop() != c:
+                return False
         return len(st) == 0
 
 # Synced seamlessly with LeetHub Pro
