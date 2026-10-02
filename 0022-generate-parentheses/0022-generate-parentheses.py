@@ -1,5 +1,3 @@
-from functools import cache
-
 class Solution:
     @cache
     def generateParenthesis(self, n: int) -> list[str]:
