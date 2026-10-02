@@ -6,15 +6,15 @@ class Solution:
         closet[0] = 1
         closet[-1] = n - 2
         for i in range(1, n - 1):
-            d = abs(nums[i] - nums[i - 1]) - abs(nums[i] - nums[i + 1])
+            d = 2 * nums[i] - nums[i - 1] - nums[i + 1]
             closet[i] = i - 1 if d <= 0 else i + 1
 
         pref = [0] * n
         suff = [0] * n
 
         for i in range(1, n):
-            pref[i] = pref[i - 1] + (1 if closet[i - 1] == i else abs(nums[i] - nums[i - 1]))
-            suff[n - i - 1] = suff[n - i] + (1 if closet[n - i] == n - i - 1 else abs(nums[n - i] - nums[n - i - 1]))
+            pref[i] = pref[i - 1] + (1 if closet[i - 1] == i else nums[i] - nums[i - 1])
+            suff[n - i - 1] = suff[n - i] + (1 if closet[n - i] == n - i - 1 else nums[n - i] - nums[n - i - 1])
         
         res = []
 
