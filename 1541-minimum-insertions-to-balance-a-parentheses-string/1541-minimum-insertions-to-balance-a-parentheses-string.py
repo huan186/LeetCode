@@ -8,19 +8,18 @@ class Solution:
                 c += 1
                 i += 1
             else:
-                j = i
-                while j < n and s[j] == ')':
-                    j += 1
-                r = 2 * c - (j - i)
-                if r >= 0:
-                    if r % 2:
+                d = 2 * c
+                while i < n and s[i] == ')':
+                    i += 1
+                    d -= 1
+                if d >= 0:
+                    if d % 2:
                         res += 1
-                elif r % 2:
-                    res += (3 - r) // 2
+                elif d % 2:
+                    res += (3 - d) // 2
                 else:
-                    res -= r // 2
-                c = max(0, r // 2)
-                i = j
+                    res -= d // 2
+                c = max(0, d // 2)
         return res + c * 2
 
 
