@@ -1,27 +1,25 @@
 class Solution:
     def minInsertions(self, s: str) -> int:
-        res = 0
-        i, n = 0, len(s)
-        c = 0
-        while i < n:
+        res = left = 0
+        i = 0
+
+        while i < len(s):
             if s[i] == '(':
-                c += 1
+                left += 1
                 i += 1
             else:
-                d = 2 * c
-                while i < n and s[i] == ')':
-                    i += 1
-                    d -= 1
-                if d >= 0:
-                    if d % 2:
-                        res += 1
-                elif d % 2:
-                    res += (3 - d) // 2
+                if i + 1 < len(s) and s[i + 1] == ')':
+                    i += 2
                 else:
-                    res -= d // 2
-                c = max(0, d // 2)
-        return res + c * 2
+                    res += 1
+                    i += 1
 
+                if left:
+                    left -= 1
+                else:
+                    res += 1
+
+        return res + 2 * left
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
