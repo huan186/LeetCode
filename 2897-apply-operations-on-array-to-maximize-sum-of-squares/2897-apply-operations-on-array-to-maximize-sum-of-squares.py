@@ -4,19 +4,14 @@ class Solution:
         count = [0] * 32
         for num in nums:
             for i in range(32):
-                count[i] += (num >> i) & 1
-                # num >>= 1
+                count[i] += num >> i & 1
         res = 0
         for i in range(k):
-            x = 0
-            for i in range(32):
-                if count[i] == 0:
-                    continue
-                x |= 1 << i
-                count[i] -= 1
-            res = (res + x * x) % mod
+            x = sum(1 << j for j in range(32) if count[j] > i )
+            if x == 0:
+                break
+            res = (res + x ** 2) % mod
         return res
-            
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
