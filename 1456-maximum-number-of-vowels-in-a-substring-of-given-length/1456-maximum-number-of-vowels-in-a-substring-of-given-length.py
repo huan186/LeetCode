@@ -1,15 +1,12 @@
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
-        v = set('aeiou')
-        cnt = res = sum(c in v for c in s[:k])
-
-        for i in range(k, len(s)):
-            cnt += (s[i] in v) - (s[i-k] in v)
+        vowels = set('aeiou')
+        res = cnt = sum(c in vowels for c in s[:k])
+        for c1, c2 in zip(s[:-k], s[k:]):
+            cnt += (c2 in vowels) - (c1 in vowels)
             res = max(res, cnt)
-            if res == k:
-                return k
-
         return res
+            
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
