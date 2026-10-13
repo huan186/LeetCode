@@ -11,11 +11,11 @@ class Solution:
         def inorder(node):
             if not node:
                 return ''
-            path = str(node.val) + 'L' + inorder(node.left) + 'R' + inorder(node.right)
-            if seen[path] == 1:
+            k = (str(node.val), inorder(node.left), inorder(node.right))
+            if seen[k] == 1:
                 res.append(node)
-            seen[path] += 1
-            return path
+            seen[k] += 1
+            return k
         inorder(root)
         return res
 
