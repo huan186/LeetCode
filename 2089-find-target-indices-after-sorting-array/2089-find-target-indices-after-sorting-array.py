@@ -1,13 +1,6 @@
 class Solution:
-    def targetIndices(self, nums: list[int], target: int) -> list[int]:
-        nums.sort()
-        res = []
-        for i, num in enumerate(nums):
-            if num == target:
-                res.append(i)
-            elif num > target:
-                break
-        return res
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        return [i for i, x in enumerate(sorted(nums)) if x == target]
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
