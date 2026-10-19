@@ -1,9 +1,9 @@
 class Solution:
     def makesquare(self, matchsticks: list[int]) -> bool:
         total = sum(matchsticks)
-        if total % 4:
-            return False
         target = total // 4
+        if total % 4 or any(l > target for l in matchsticks):
+            return False
         matchsticks.sort()
         n = len(matchsticks)
 
