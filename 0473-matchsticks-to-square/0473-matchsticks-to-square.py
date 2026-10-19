@@ -12,7 +12,7 @@ class Solution:
             if s == target:
                 cnt += 1
                 s = 0
-            if cnt == 4:
+            if cnt == 3:
                 return True
             for i in range(n):
                 if used >> i & 1:
