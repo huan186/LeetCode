@@ -11,9 +11,7 @@ class Solution:
         mn = min(s)
         mx = max(s)
 
-        freq = Counter(s)
-
-        if s[0] == mx and s[-1] == mn and freq[mx] == 1 and freq[mn] == 1:
+        if s[0] == mx and s[-1] == mn and s.count(mx) == 1 and s.count(mn) == 1:
             return 3
 
         if s[0] == mn or s[-1] == mx:
