@@ -3,15 +3,17 @@ class Solution:
         n = len(nums)
         if n == 1:
             return 0
-        cnt = defaultdict(int)
-        for i in range(n - 1):
-            cnt[nums[i + 1] - nums[i]] += 1
-        if cnt[1] < n - 2 and cnt[-1] < n - 2:
+
+        inc = all(nums[(i + 1) % n] == (nums[i] + 1) % n
+                  for i in range(n))
+        dec = all(nums[(i + 1) % n] == (nums[i] - 1) % n
+                  for i in range(n))
+
+        if not inc and not dec:
             return -1
-        i0 = nums.index(0)
-        if cnt[1]:
-            return min(i0, 2 + n - i0)
-        return min(i0 + 2, n - i0)
+
+        i = nums.index(0)
+        return min(i, n - i + 2) if inc else min(i + 2, n - i)
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
