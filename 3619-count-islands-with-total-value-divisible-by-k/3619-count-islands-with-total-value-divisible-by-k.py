@@ -3,12 +3,10 @@ class Solution:
         m, n = len(grid), len(grid[0])
 
         def dfs(x, y):
-            if not grid[x][y]:
-                return 0
             v, grid[x][y] = grid[x][y], 0
             for dx, dy in ((-1, 0), (0, 1), (1, 0), (0, -1)):
                 nx, ny = x + dx, y + dy
-                if 0 <= nx < m and 0 <= ny < n:
+                if 0 <= nx < m and 0 <= ny < n and grid[nx][ny]:
                     v += dfs(nx, ny)
             return v
 
