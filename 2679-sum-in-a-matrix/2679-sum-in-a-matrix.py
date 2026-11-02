@@ -1,15 +1,7 @@
 class Solution:
     def matrixSum(self, nums: List[List[int]]) -> int:
-        m, n = len(nums), len(nums[0])
-        for row in nums:
-            row.sort()
-        res = 0
-        for j in range(n):
-            v = 0
-            for i in range(m):
-                v = max(v, nums[i][j])
-            res += v
-        return res
+        for row in nums: row.sort()
+        return sum(max(col) for col in zip(*nums))
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
