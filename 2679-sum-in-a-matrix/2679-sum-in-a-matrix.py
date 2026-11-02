@@ -5,11 +5,10 @@ class Solution:
             row.sort()
         res = 0
         for j in range(n):
-            col = []
+            v = 0
             for i in range(m):
-                col.append(nums[i][j])
-            col.sort()
-            res += col[-1]
+                v = max(v, nums[i][j])
+            res += v
         return res
 
 # Synced seamlessly with LeetHub Pro
