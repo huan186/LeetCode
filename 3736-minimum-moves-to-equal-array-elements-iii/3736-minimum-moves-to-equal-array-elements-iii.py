@@ -1,7 +1,6 @@
 class Solution:
     def minMoves(self, nums: List[int]) -> int:
-        m = max(nums)
-        return sum(m - x for x in nums)
+        return max(nums) * len(nums) - sum(nums)
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
