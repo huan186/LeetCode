@@ -1,30 +1,27 @@
 class Solution:
     def countServers(self, n: int, logs: List[List[int]], x: int, queries: List[int]) -> List[int]:
-        queries = [(q, i) for i, q in enumerate(queries)]
-        queries.sort()
-        h1, h2 = [], []
-        for s, t in logs:
-            heapq.heappush(h1, (t, s))
+        logs.sort(key=lambda p: p[1])
+        qs = sorted((q, i) for i, q in enumerate(queries))
 
-        res = [n] * len(queries)
         count = defaultdict(int)
+        left = right = 0
+        res = [0] * len(queries)
 
-        for q, i in queries:
-            while h1 and h1[0][0] <= q:
-                t, s = heapq.heappop(h1)
-                heapq.heappush(h2, (t, s))
-                count[s] += 1
+        for q, i in qs:
+            while right < len(logs) and logs[right][1] <= q:
+                count[logs[right][0]] += 1
+                right += 1
 
-            while h2 and h2[0][0] < q - x:
-                t, s = heapq.heappop(h2)
+            while left < right and logs[left][1] < q - x:
+                s = logs[left][0]
                 count[s] -= 1
                 if count[s] == 0:
-                    del(count[s])
-            
-            res[i] -= len(count)
+                    del count[s]
+                left += 1
+
+            res[i] = n - len(count)
 
         return res
-        
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
