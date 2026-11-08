@@ -8,12 +8,7 @@ class Solution:
                 if grid[r][c]:
                     rc[r] += 1
                     cc[c] += 1
-        res = 0
-        for r in range(m):
-            for c in range(n):
-                if grid[r][c] and (rc[r] > 1 or cc[c] > 1):
-                    res += 1
-        return res
+        return sum(rc[r] > 1 or cc[c] > 1 for r in range(m) for c in range(n) if grid[r][c])
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
