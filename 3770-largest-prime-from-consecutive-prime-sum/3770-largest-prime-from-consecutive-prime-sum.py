@@ -33,7 +33,6 @@ gp = find_good_primes()
 
 class Solution:
     def largestPrime(self, n: int) -> int:
-        print(gp)
         return gp[bisect.bisect_right(gp, n) - 1]
 
 
