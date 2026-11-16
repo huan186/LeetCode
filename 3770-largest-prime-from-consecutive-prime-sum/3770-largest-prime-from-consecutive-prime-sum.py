@@ -1,37 +1,40 @@
-def linear_seive(m):
-    lp = [0] * (m + 1)
+N = 5 * 10 ** 5
+def linear_seive(n):
+    lp = [0] * (n + 1)
     primes = []
 
-    for i in range(2, m + 1):
+    for i in range(2, n + 1):
         if lp[i] == 0:
             lp[i] = i
             primes.append(i)
     
         for p in primes:
             x = i * p
-            if x > m or p > lp[i]:
+            if x > n or p > lp[i]:
                 break
             lp[x] = p
 
     return primes, lp
 
-primes, lp = linear_seive(5 * 10 ** 5)
+primes, lp = linear_seive(N)
+
+def find_good_primes():
+    gp = [0]
+    s = 0
+    for p in primes:
+        s += p
+        if s > N:
+            break
+        if lp[s] == s:
+            gp.append(s)
+    return gp
+
+gp = find_good_primes()
 
 class Solution:
     def largestPrime(self, n: int) -> int:
-        if n <= 1:
-            return 0
-
-        s = 0
-        res = 0
-        
-        for p in primes:
-            s += p
-            if s > n:
-                break
-            if lp[s] == s:
-                res = s
-        return res
+        print(gp)
+        return gp[bisect.bisect_right(gp, n) - 1]
 
 
 # Synced seamlessly with LeetHub Pro
