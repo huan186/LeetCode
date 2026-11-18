@@ -10,7 +10,7 @@ class Solution:
         for i in range(2, n + 1):
             if not lp[i]:
                 if s < i:
-                    break
+                    return res
                 s -= i
                 lp[i] = i
                 primes.append(i)
