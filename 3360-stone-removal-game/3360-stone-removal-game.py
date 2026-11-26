@@ -1,6 +1,6 @@
 class Solution:
     def canAliceWin(self, n: int) -> bool:
-        return ((3974751580584960 >> n) & 1) == 1
+        return ((0xE1F03F807FC00 >> n) & 1) == 1
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
